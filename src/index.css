@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+.btn-action-button{
+    padding: 10px 25px;
+    /* margin: 10px; */
+    background-color: #DF9029;
+    /* width: fit-content; */
+    /* height: fit-content; */
+    border-radius: 5%;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    border: 0.5px groove white;
+}
+
+
+/* for the parent div*/
+.cover-container{
+    width: 100%;
+}
+
+/*for content div*/
+.content-area{
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding: 3px;
+    max-width: 75%;
+    min-width: 75%;
+}
+
+
+/* dimensions for different sections*/
+.sect-dim{
+    /* padding: 10px 25px; */
+    width: 100%;
+    height: 500px;    
+}
+
+
+.hero-bg{
+    background-color: #FFEFEF;
+    height: 700px;
+    width: 100%;
+}
