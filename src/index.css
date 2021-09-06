@@ -20,11 +20,12 @@
 /* for the parent div*/
 .cover-container{
     width: 100%;
+    display: flex;
 }
 
 /*for content div*/
 .content-area{
-    display: inline-block;
+    display: flex;
     text-align: left;
     margin: 0 auto;
     padding: 3px;
@@ -45,4 +46,67 @@
     background-color: #FFEFEF;
     height: 700px;
     width: 100%;
+}
+
+.logo{
+    color: #DF9029 ;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 auto;
+}
+
+.footer-loc{
+    position: absolute;
+    bottom: 30px;
+}
+
+.footer-col-1{
+    max-width: 40%;
+    min-width: 20%;
+    margin: 0;
+    padding: 15px;
+}
+
+.footer-col-1 .socials{
+    display: flex;
+    /* padding: 5px 5px; */
+    /* margin: 0 auto; */
+}
+
+.footer-col-1 .socials .socials-img{
+    padding: 5px;
+    /* margin: 0 auto; */
+}
+
+.footer-col-2{
+    max-width: 60%;
+    min-width: 25%;
+    margin: 0;
+    padding: 15px;
+
+}
+
+.footer-col-3{
+    max-width: 30%;
+    min-width: 30%;
+    padding: 15px;
+    margin: 0;
+}
+
+.footer-links{
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer-links h3{
+    font-weight: bold;
+}
+
+.footer-pad{
+    padding: 0 50px;
+}
+
+
+.footersection{
+    padding: 50px 0;
 }
