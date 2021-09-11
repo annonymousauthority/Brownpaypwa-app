@@ -34,9 +34,9 @@
         </li>
         <li>
           <a
-            href="/"
-            aria-label="Our product"
-            title="Our product"
+            href="/learn"
+            aria-label="Learn"
+            title="Learn"
             class="
               font-medium
               tracking-wide
@@ -50,9 +50,9 @@
         </li>
         <li>
           <a
-            href="/"
-            aria-label="Product pricing"
-            title="Product pricing"
+            href="/exchange"
+            aria-label="Excahnge"
+            title="Exchange"
             class="
               font-medium
               tracking-wide
@@ -208,12 +208,12 @@
                       transition-colors
                       duration-200
                     "
-                    >Product</a
+                    >Home</a
                   >
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="/learn"
                     aria-label="Our product"
                     title="Our product"
                     class="
@@ -224,14 +224,14 @@
                       duration-200
                       hover:text-deep-purple-accent-400
                     "
-                    >Features</a
+                    >Learn</a
                   >
                 </li>
                 <li>
                   <a
-                    href="/"
-                    aria-label="Product pricing"
-                    title="Product pricing"
+                    href="/exchange"
+                    aria-label="Exchange"
+                    title="Exchange"
                     class="
                       font-medium
                       tracking-wide
@@ -240,10 +240,11 @@
                       duration-200
                       hover:text-deep-purple-accent-400
                     "
-                    >Pricing</a
+                    >Exchange</a
                   >
                 </li>
                 <li>
+                <router-link to="/about">
                   <a
                     href="/"
                     aria-label="About us"
@@ -257,7 +258,7 @@
                       hover:text-deep-purple-accent-400
                     "
                     >About us</a
-                  >
+                  ></router-link>
                 </li>
                 <li>
                   <a

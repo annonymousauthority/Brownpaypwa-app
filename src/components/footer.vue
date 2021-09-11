@@ -1,6 +1,6 @@
 <template>
   <div class="hero-bg">
-    <div class="relative mt-16 text-left">
+    <div class="relative text-left">
       <div
         class="
           px-4
@@ -89,7 +89,7 @@
                 class="
                   font-semibold
                   tracking-wide
-                  text-gray-800 text-left text-xl 
+                  text-gray-800 text-left text-xl
                   my-4
                 "
               >
@@ -97,7 +97,7 @@
               </p>
               <ul class="mt-2 space-y-2 text-left text-md">
                 <li>
-                  <router-link to="">
+                  <router-link to="/about">
                     <a
                       href="/"
                       class="
@@ -112,7 +112,7 @@
                 </li>
 
                 <li>
-                  <router-link to="">
+                  <router-link to="/career">
                     <a
                       href="/"
                       class="
@@ -273,7 +273,7 @@
                 </li>
 
                 <li>
-                  <router-link to="">
+                  <router-link to="/partnership">
                     <a
                       href="/"
                       class="
@@ -314,9 +314,7 @@
             border-t border-deep-purple-accent-200
             sm:flex-row
           "
-        >
-           
-        </div>
+        ></div>
       </div>
     </div>
   </div>
