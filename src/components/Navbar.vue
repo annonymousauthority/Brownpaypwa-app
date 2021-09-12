@@ -12,9 +12,11 @@
     "
   >
     <div class="relative flex items-center justify-between">
-      <a class="flex items-center" href="/">
+      <router-link to="/">
+      <a class="flex items-center" href="#">
         <img class="h-12 w-auto sm:h-12" :src="logo" alt="site" />
       </a>
+      </router-link>
       <ul class="items-center hidden space-x-8 lg:flex">
         <li>
           <a
@@ -199,7 +201,7 @@
                 </li>
                 <li>
                   <a
-                    href="/explore"
+                    href="/learn"
                     aria-label="Our product"
                     title="Our product"
                     class="
@@ -213,22 +215,7 @@
                     >Learn</a
                   >
                 </li>
-                <li>
-                  <a
-                    href="/exchange"
-                    aria-label="Exchange"
-                    title="Exchange"
-                    class="
-                      font-medium
-                      tracking-wide
-                      text-gray-700
-                      transition-colors
-                      duration-200
-                      hover:text-deep-purple-accent-400
-                    "
-                    >Exchange</a
-                  >
-                </li>
+                
                 <li>
                 <router-link to="/about">
                   <a
