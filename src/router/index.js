@@ -4,6 +4,8 @@ import Career from "../views/Career.vue"
 import Partnership from "../views/Partnership.vue"
 import Learn from "../views/Learn.vue"
 import Market from "../views/Market.vue"
+import Tips from "../views/Tips.vue"
+
 
 const routes = [
   {
@@ -41,6 +43,12 @@ const routes = [
     name: "Market",
     component:Market
   },
+  {
+    path: "/tips",
+    name: "Tips",
+    component: Tips
+  }
+
   
 ];
 

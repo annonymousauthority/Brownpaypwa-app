@@ -544,7 +544,7 @@ import Footer from "../components/footer.vue";
 export default {
   data() {
     return {
-      img: require("../assets/5690591.jpg"),
+      img: require("../assets/4940806.jpg"),
        imgl:require('../assets/5690588.jpg')
     };
   },

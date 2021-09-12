@@ -33,8 +33,9 @@
           >
         </li>
         <li>
+         <router-link  to="/learn">
           <a
-            href="/learn"
+            href="#"
             aria-label="Learn"
             title="Learn"
             class="
@@ -47,22 +48,7 @@
             "
             >Learn</a
           >
-        </li>
-        <li>
-          <a
-            href="/exchange"
-            aria-label="Excahnge"
-            title="Exchange"
-            class="
-              font-medium
-              tracking-wide
-              text-gray-700
-              transition-colors
-              duration-200
-              hover:text-deep-purple-accent-400
-            "
-            >Exchange</a
-          >
+         </router-link>
         </li>
         <li>
           <router-link to="/about">
@@ -213,7 +199,7 @@
                 </li>
                 <li>
                   <a
-                    href="/learn"
+                    href="/explore"
                     aria-label="Our product"
                     title="Our product"
                     class="
