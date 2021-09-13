@@ -219,110 +219,57 @@
 
   <!--- Echange Section -->
   <div id="exchange">
-  <div
-    class="
-      px-4
-      py-16
-      mx-auto
-      sm:max-w-xl
-      md:max-w-full
-      lg:max-w-screen-xl
-      md:px-16
-      lg:px-auto
-      lg:py-20
-    "
-  >
-    <table
+    <div
       class="
-        w-full
-        flex flex-row
-        sm:bg-white
-        rounded-lg
-        overflow-hidden
-        sm:shadow-lg
-        my-5
+        px-4
+        py-16
+        mx-auto
+        sm:max-w-xl
+        md:max-w-full
+        lg:max-w-screen-xl
+        md:px-16
+        lg:px-auto
+        lg:py-20
       "
     >
-      <thead class="text-black">
-        <tr
-          class="
-            bg-teal-400
-            flex flex-col flex-no
-            wrap
-            sm:table-row
-            rounded-l-lg
-            sm:rounded-none
-            mb-2
-            sm:mb-0
-            border-t border-r border-gray-00
-          "
-        >
-          <th class="p-3 xl:text-3xl border-r border-gray-00 text-center">
-            Currency
-          </th>
-          <th class="p-3 xl:text-3xl border-r border-gray-00 text-center">
-            Price
-          </th>
-          <th class="p-3 xl:text-3xl border-r border-gray-00 text-center">
-            Market Cap
-          </th>
-        </tr>
-      </thead>
-      <tbody
-        class="flex-1 sm:flex-none"
-        v-for="currency in info"
-        :key="currency.symbol"
-      >
-        <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
-          <td
-            class="
-              border-grey-light border
-              xl:text-xl
-              hover:bg-gray-100
-              p-3
-              mx-auto
-            "
-          >
-            <div class="flex items-center justify-center">
-              <img
-                :src="currency.image"
-                alt="avatar"
-                class="object-cover w10 h-10 rounded-full shadow-sm"
-              />
-              <div>
-                <p class="text-sm ml-4 xl:text-xl leading-4 text-gray-600">
-                  {{ currency.name }}
-                </p>
+      <table>
+        <thead>
+          <tr>
+            <th
+              class="head md:text-2xl md:border-r border-gray-300"
+              scope="col "
+            >
+              Currency
+            </th>
+            <th class="head md:text-2xl" scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody v-for="currency in info" :key="currency.symbol">
+          <tr>
+            <td
+              class="tab-text md:border-r border-gray-300"
+              data-label="Currency"
+            >
+              <div class="flex items-center justify-end md:justify-center">
+                <img
+                  :src="currency.image"
+                  alt="avatar"
+                  class="object-cover ml-8 w-10 h-10 rounded-full shadow-sm"
+                />
+                <div>
+                  <p class="text-md ml-2 md:text-md leading-4 text-gray-900">
+                    {{ currency.name }}
+                  </p>
+                </div>
               </div>
-            </div>
-          </td>
-          <td
-            class="
-              border-grey-light border
-              xl:text-xl
-              hover:bg-gray-100
-              p-3
-              truncate
-            "
-          >
-            $ {{ currency.current_price }}
-          </td>
-          <td
-            class="
-              border-grey-light border
-              hover:bg-gray-100
-              p-3
-              hover:font-medium
-              cursor-pointer
-              xl:text-xl
-            "
-          >
-            {{ currency.market_cap }}
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+            </td>
+            <td class="md:text-lg" data-label="price">
+              $ {{ currency.current_price }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <!--Exchange Section Ends -->
 
@@ -375,14 +322,15 @@
               class="
                 max-w-lg
                 mb-6
-                font-sans font-bold
-                leading-none
-                tracking-tight
+                font-sans
+                xl:text-6xl
+                text-3xl
+                font-bold
+                tracking-normal
                 text-white
                 sm:text-4xl
                 md:mx-auto
-                xl:text-5xl
-                text-5xl
+                leading-8
               "
             >
               Send money with <br />
@@ -427,96 +375,118 @@
   <!--End of New Section-->
 
   <!--Virtual Card Section -->
-   <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div
+    class="
+      px-4
+      py-16
+      mx-auto
+      sm:max-w-xl
+      md:max-w-full
+      lg:max-w-screen-xl
+      md:px-24
+      lg:px-8
+      lg:py-20
+    "
+  >
     <div class="flex flex-col items-center justify-between lg:flex-row">
       <div class="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
         <div class="max-w-xl mb-6">
-          <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-left">
+          <h2
+            class="
+              max-w-lg
+              mb-6
+              font-sans
+              text-3xl
+              font-bold
+              tracking-tight
+              text-gray-900
+              sm:text-4xl
+              sm:leading-none
+              text-left
+            "
+          >
             Virtual Subscription <span class="title">Cards</span>
           </h2>
           <p class="text-base text-gray-700 md:text-lg text-left">
-           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae. explicabo.
           </p>
         </div>
-       
       </div>
       <div class="relative lg:w-1/2">
         <img
-           class="object-contain w-full h-56 rounded sm:h-96"
-            :src="img3"
-            alt=""
+          class="object-contain w-full h-56 rounded sm:h-96"
+          :src="img3"
+          alt=""
+        />
+        <form
+          class="
+            flex flex-col
+            items-center
+            w-full
+            mb-4
+            md:flex-row
+            md:px-16
+            sm:mt-5
+          "
+        >
+          <input
+            placeholder="Email"
+            required=""
+            type="text"
+            class="
+              flex-grow
+              w-full
+              h-12
+              px-4
+              mb-3
+              text-white
+              transition
+              duration-200
+              border-2 border-gray-200
+              rounded
+              appearance-none
+              md:mr-2
+              md:mb-0
+              bg-deep-purple-900
+              focus:border-teal-accent-700
+              focus:outline-none
+              focus:shadow-outline
+            "
           />
-          <form
-                class="
-                  flex flex-col
-                  items-center
-                  w-full
-                  mb-4
-                  md:flex-row
-                  md:px-16
-                "
-              >
-                <input
-                  placeholder="Email"
-                  required=""
-                  type="text"
-                  class="
-                    flex-grow
-                    w-full
-                    h-12
-                    px-4
-                    mb-3
-                    text-white
-                    transition
-                    duration-200
-                    border-2 border-gray-200
-                    rounded
-                    appearance-none
-                    md:mr-2
-                    md:mb-0
-                    bg-deep-purple-900
-                    focus:border-teal-accent-700
-                    focus:outline-none
-                    focus:shadow-outline
-                    
-                    
-                  "
-                />
-                <a
-                  href="/"
-                  class="
-                    inline-flex
-                    items-center
-                    btn-action-button
-                    justify-center
-                    w-full
-                    h-12
-                    px-6
-                    font-semibold
-                    tracking-wide
-                    text-teal-900
-                    transition
-                    duration-200
-                    rounded
-                    shadow-md
-                    md:w-auto
-                    hover:text-deep-purple-900
-                    bg-teal-accent-400
-                    hover:bg-teal-accent-700
-                    focus:shadow-outline
-                    focus:outline-none
-                  "
-                >
-                  Subscribe
-                </a>
-              </form>
-        
+          <a
+            href="/"
+            class="
+              inline-flex
+              items-center
+              btn-action-button
+              justify-center
+              w-full
+              h-12
+              px-6
+              font-semibold
+              tracking-wide
+              text-teal-900
+              transition
+              duration-200
+              rounded
+              shadow-md
+              md:w-auto
+              hover:text-deep-purple-900
+              bg-teal-accent-400
+              hover:bg-teal-accent-700
+              focus:shadow-outline
+              focus:outline-none
+            "
+          >
+            Subscribe
+          </a>
+        </form>
       </div>
     </div>
   </div>
-  
+
   <footercomponent />
 </template>
 

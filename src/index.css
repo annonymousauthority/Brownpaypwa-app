@@ -350,20 +350,93 @@ Partnership & collaboration Css style */
 
 
 /*Table css Styling*/
- @media (min-width: 640px) {
-     table {
-         display: inline-table !important;
-     }
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
 
-     thead tr:not(:first-child) {
-         display: none;
-     }
- }
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
 
- td:not(:last-child) {
-     border-bottom: 0;
- }
+table tr {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 2em;
+}
 
- th:not(:last-child) {
-     border-bottom: 2px solid rgba(0, 0, 0, .1);
- }
+/* .head{
+    font-size: 1.45rem;
+    font-weight: 900;
+}
+
+.tab-text{
+    font-size: 1.25rem;
+} */
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size:2em;
+    }
+
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
