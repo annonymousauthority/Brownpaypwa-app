@@ -16,25 +16,7 @@
             sm:w-auto
           "
         >
-          <ul class="items-center space-x-10 flex text-1xl p-4">
-            <li>
-              <router-link to="/about">
-                <a
-                  href="/"
-                  aria-label="About us"
-                  title="About us"
-                  class="
-                    font-medium
-                    tracking-tight
-                    text-white
-                    transition-colors
-                    duration-200
-                    hover:text-deep-purple-accent-400
-                  "
-                  >About</a
-                ></router-link
-              >
-            </li>
+          <ul class="items-center space-x-10 flex text-1xl p-4">         
             <li>
               <router-link to="/career">
                 <a
@@ -235,8 +217,7 @@
           <div
             class="
               flex
-              items-center
-              justify-center
+              
               w-12
               h-12
               rounded-full
@@ -244,7 +225,8 @@
             "
           >
             <svg
-              class="w-20 h-20 text-deep-purple-accent-400"
+              class="w-20 h-20 text-deep-purple-accent-400 items-center
+              justify-center"
               stroke="currentColor"
               viewBox="0 0 52 52"
             >
@@ -293,6 +275,7 @@
                   lg:w-32
                   lg:-ml-28 lg:-mt-10
                   sm:block
+                  text-center
                 "
               >
                 <defs>
@@ -325,31 +308,6 @@
             inventore. Sunt culpa quibusdam ex, nesciunt sapiente hic.
           </p>
         </div>
-        <!-- <div>
-          <a
-            href="/"
-            class="
-              inline-flex
-              items-center
-              justify-center
-              h-12
-              px-6
-              font-medium
-              tracking-wide
-              text-white
-              transition
-              duration-200
-              rounded
-              shadow-md
-              bg-deep-purple-accent-400
-              hover:bg-deep-purple-accent-700
-              focus:shadow-outline
-              focus:outline-none
-            "
-          >
-            Get started
-          </a>
-        </div> -->
       </div>
     </div>
     <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4 py-20">
@@ -384,11 +342,11 @@
         </p>
       </div>
       <div class="text-center md:border-r">
-        <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl">3</h6>
+        <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl mt-5 md:mt-0">3</h6>
         <p
           class="
             text-sm
-            font-medium
+            font-medium 
             tracking-widest
             text-gray-800
             uppercase
@@ -399,7 +357,7 @@
         </p>
       </div>
       <div class="text-center">
-        <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl">5</h6>
+        <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl mt-5 md:mt-0">5</h6>
         <p
           class="
             text-sm
@@ -456,37 +414,37 @@
       lg:py-4
     "
   >
- <div class="grid gap-10 mx-auto lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3 py-10">
+ <div class="grid gap-10 mx-auto lg:max-w-screen-lg md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3  py-10">
       <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+        <img class="object-cover w-60 h-60 md:w-40 md:h-40 mb-2 xl:w-60 xl:h-60 rounded-full shadow" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
         <div class="flex flex-col items-center">
           <p class="text-lg font-bold text-white">Oliver Aguilerra</p>
           <p class="text-sm text-white">Product Manager</p>
         </div>
       </div>
       <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+        <img class="object-cover w-60 h-60 md:w-40 md:h-40 mb-2 xl:w-60 xl:h-60 rounded-full shadow" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
         <div class="flex flex-col items-center">
           <p class="text-lg font-bold text-white">Marta Clermont</p>
           <p class="text-sm text-white">Design Team Lead</p>
         </div>
       </div>
       <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+        <img class="object-cover w-60 h-60 mb-2 md:w-40 md:h-40 xl:w-60 xl:h-60 rounded-full shadow" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
         <div class="flex flex-col items-center">
           <p class="text-lg font-bold text-white">Anthony Geek</p>
           <p class="text-sm text-white">CTO, Lorem Inc.</p>
         </div>
       </div>
       <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+        <img class="object-cover w-60 h-60 md:w-40 md:h-40 xl:w-60 xl:h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
         <div class="flex flex-col items-center">
           <p class="text-lg font-bold text-white">Alice Melbourne</p>
           <p class="text-sm text-white">Human Resources</p>
         </div>
       </div>
       <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
+        <img class="object-cover w-60 h-60 md:w-40 md:h-40 xl:w-60 xl:h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
         <div class="flex flex-col items-center">
           <p class="text-lg font-bold text-white">Martin Garix</p>
           <p class="text-sm text-white">Bad boy</p>
@@ -499,41 +457,6 @@
   </div>
 
    
-    <!-- <div
-      class="
-        grid
-        gap-x-0
-        mx-auto
-        lg:max-w-screen-sm
-        sm:grid-cols-2
-        lg:grid-cols-2
-        mt-10
-      "
-    >
-      <div class="flex flex-col items-center">
-        <img
-          class="object-cover w-60 h-60 mb-2 rounded-full shadow"
-          src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-          alt="Person"
-        />
-        <div class="flex flex-col items-center">
-          <p class="text-lg font-bold">Alice Melbourne</p>
-          <p class="text-sm text-gray-800">Human Resources</p>
-        </div>
-      </div>
-      <div class="flex flex-col items-center">
-        <img
-          class="object-cover w-60 h-60 mb-2 rounded-full shadow"
-          src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-          alt="Person"
-        />
-        <div class="flex flex-col items-center">
-          <p class="text-lg font-bold">Martin Garix</p>
-          <p class="text-sm text-gray-800">Bad boy</p>
-        </div>
-      </div>
-    </div> -->
- 
 
   <Footer />
 </template>

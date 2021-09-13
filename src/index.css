@@ -94,7 +94,7 @@ Partnership & collaboration Css style */
 
 /*Carousel styling*/
 .carousel {
-    min-height: 80vh;
+    min-height: 90vh;
     display: grid;
     grid-template-rows: 1fr 3fr 1.5fr;
     grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
@@ -178,7 +178,7 @@ Partnership & collaboration Css style */
     transform: translateY(-40%);
     color: #fff;
     width: 100%;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .main-post__tag-wrapper {

@@ -19,24 +19,6 @@
         >
           <ul class="items-center space-x-10 flex text-1xl p-4">
             <li>
-              <router-link to="/explore">
-                <a
-                  href="#"
-                  aria-label="About us"
-                  title="About us"
-                  class="
-                    font-medium
-                    tracking-tight
-                    text-white
-                    transition-colors
-                    duration-200
-                    hover:text-deep-purple-accent-400
-                  "
-                  >Explore the Crypto World</a
-                ></router-link
-              >
-            </li>
-            <li>
               <router-link to="/tips">
                 <a
                   href="#"
@@ -379,8 +361,10 @@
             <p class="text-left pr-4 leading-relaxed">
               {{ news.heading }}
             </p>
+
             <button
               class="btn-action-button text-white inline-flex items-center mb-4"
+              @click="postDetails(news)"
             >
               Learn More
               <svg
@@ -415,7 +399,9 @@
           overflow-hidden
         "
         v-for="news in articles.slice(9, 10)"
-        :key="news"
+        :key="news.id"
+      
+        
       >
         <div
           class="
@@ -445,9 +431,13 @@
                 duration-200
                 hover:text-deep-purple-accent-700
               "
-              ><p class="text-2xl font-bold leading-5">
+              >
+              <router-link :to="`/post-details/` + news.id">
+                  <p class="text-2xl font-bold leading-5">
                 {{ news.title }}
-              </p></a
+              </p>
+              </router-link>
+            </a
             >
             <p class="mb-4 text-gray-700">
               {{ news.heading.substring(0, 100) + "..." }}
@@ -478,6 +468,7 @@
               >
                 {{ news.date }}
               </p>
+
               <button
                 class="
                   btn-action-button
@@ -488,6 +479,7 @@
                   text-center
                   mx-auto
                 "
+        
               >
                 Learn More
                 <svg
@@ -527,6 +519,8 @@ export default {
     articles() {
       return this.$store.state.articles;
     },
+
+   
   },
 };
 </script>

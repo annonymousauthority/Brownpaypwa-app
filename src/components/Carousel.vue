@@ -13,29 +13,15 @@
               alt="New McLaren wind tunnel 'critical' to future performance, says Tech Director Key"
             />
           </div>
-          <div class="main-post__content">
-            <div class="main-post__tag-wrapper">
-              <span class="main-post__tag">News</span>
+          <div class="sm:mx-auto xl:max-w-6xl text-white">
+            <div class="main-post__content">
+              <div class="main-post__tag-wrapper">
+                <span class="main-post__tag">News</span>
+              </div>
+              <h1 class="main-post__title text-center xl:text-left">
+                Why Cryptocurrency Dropped so low today
+              </h1>
             </div>
-            <h1 class="main-post__title xl:max-w-screen">
-              Why Cryptocurrency Dropped so low today
-            </h1>
-            <a class="main-post__link" href="#">
-              <span class="main-post__link-text">find out more</span>
-              <svg
-                class="main-post__link-icon main-post__link-icon--arrow"
-                width="37"
-                height="12"
-                viewBox="0 0 37 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11"
-                  stroke="white"
-                />
-              </svg>
-            </a>
           </div>
         </article>
         <article class="main-post main-post--not-active">
@@ -45,33 +31,21 @@
               alt="What To Watch For in the 2019 Hungarian Grand Prix"
             />
           </div>
-          <div class="main-post__content">
+
+           <div class="sm:mx-auto xl:max-w-6xl text-white">
+
+              <div class="main-post__content">
             <div class="main-post__tag-wrapper">
               <span class="main-post__tag">Breaking News</span>
             </div>
-            <h1 class="main-post__title">
+            <h1 class="main-post__title text-center xl:text-left">
               A crypto hedge fund manager breaks down three strategies
             </h1>
-            <a class="main-post__link" href="#">
-              <svg
-                class="main-post__link-icon main-post__link-icon--play-btn"
-                width="30"
-                height="30"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="10"
-                  cy="10"
-                  r="9"
-                  stroke="#C20000"
-                  stroke-width="2"
-                />
-                <path d="M14 10L8 6V14L14 10Z" fill="white" />
-              </svg>
-            </a>
+          
           </div>
+
+           </div>
+          
         </article>
         <article class="main-post main-post--not-active">
           <div class="main-post__image">
@@ -81,33 +55,22 @@
             Verstappen"
             />
           </div>
-          <div class="main-post__content">
+          <div class="sm:mx-auto xl:max-w-6xl text-white">
+               <div class="main-post__content">
             <div class="main-post__tag-wrapper">
               <span class="main-post__tag">Latest News</span>
             </div>
-            <h1 class="main-post__title text-auto">Bitcoin Achieves Major Milestone</h1>
-            <a class="main-post__link" href="#">
-              <span class="main-post__link-text">find out more</span>
-              <svg
-                class="main-post__link-icon main-post__link-icon--arrow"
-                width="37"
-                height="12"
-                viewBox="0 0 37 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11"
-                  stroke="white"
-                />
-              </svg>
-            </a>
+            <h1 class="main-post__title text-auto text-center xl:text-left ">
+              Bitcoin Achieves Major Milestone
+            </h1>
+            
           </div>
+          </div>
+         
         </article>
       </div>
     </header>
-
-    <div class="posts-wrapper hide-on-mobile">
+    <div class="posts-wrapper max-w-7xl hide-on-mobile mr-0 xl:-ml-40 xl:ml-92">
       <article class="post post--active">
         <div class="progress-bar">
           <div class="progress-bar__fill"></div>
@@ -151,14 +114,11 @@ export default {
   mounted() {
     let mainPosts = document.querySelectorAll(".main-post");
     let posts = document.querySelectorAll(".post");
-
     let i = 0;
     let postIndex = 0;
     let currentPost = posts[postIndex];
     let currentMainPost = mainPosts[postIndex];
-
     let progressInterval = setInterval(progress, 50); // 180
-
     function progress() {
       if (i === 100) {
         i = -5;
@@ -168,17 +128,13 @@ export default {
           ".progress-bar--primary .progress-bar__fill"
         ).style.width = 0;
         currentPost.classList.remove("post--active");
-
         postIndex++;
-
         currentMainPost.classList.add("main-post--not-active");
         currentMainPost.classList.remove("main-post--active");
-
         // reset postIndex to loop over the slides again
         if (postIndex === posts.length) {
           postIndex = 0;
         }
-
         currentPost = posts[postIndex];
         currentMainPost = mainPosts[postIndex];
       } else {
@@ -188,7 +144,6 @@ export default {
           ".progress-bar--primary .progress-bar__fill"
         ).style.width = `${i}%`;
         currentPost.classList.add("post--active");
-
         currentMainPost.classList.add("main-post--active");
         currentMainPost.classList.remove("main-post--not-active");
       }

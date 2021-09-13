@@ -17,24 +17,7 @@
           "
         >
           <ul class="items-center space-x-10 flex text-1xl p-4">
-            <li>
-              <router-link to="/explore">
-                <a
-                  href="/"
-                  aria-label="About us"
-                  title="About us"
-                  class="
-                    font-medium
-                    tracking-tight
-                    text-white
-                    transition-colors
-                    duration-200
-                    hover:text-deep-purple-accent-400
-                  "
-                  >Explore the Crypto World</a
-                ></router-link
-              >
-            </li>
+           
             <li>
               <router-link to="/tips">
                 <a
