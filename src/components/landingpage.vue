@@ -114,45 +114,7 @@
                   minutes at low cost.
                 </p>
               </div>
-              <form
-                class="
-                  flex flex-col
-                  items-center
-                  w-full
-                  mb-4
-                  md:flex-row
-                  md:px-16
-                "
-              >
               
-                <a
-                  href="/"
-                  class="
-                    inline-flex
-                    items-center
-                    btn-action-button
-                    justify-center
-                    w-full
-                    h-12
-                    px-6
-                    font-semibold
-                    tracking-wide
-                    text-teal-900
-                    transition
-                    duration-200
-                    rounded
-                    shadow-md
-                    md:w-auto
-                    hover:text-deep-purple-900
-                    bg-teal-accent-400
-                    hover:bg-teal-accent-700
-                    focus:shadow-outline
-                    focus:outline-none
-                  "
-                >
-                  Get Started
-                </a>
-              </form>
               <a
                 href="#exchange"
                 aria-label="Scroll down"
