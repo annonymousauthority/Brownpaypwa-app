@@ -102,7 +102,7 @@
             bg-white
             rounded
           "
-          v-for="news in learn.slice(0, 6)"
+          v-for="news in learn.slice(30, 36)"
           :key="news.id"
         >
           <img
@@ -133,23 +133,35 @@
             <p class="text-left mb-4 text-gray-700">
               {{ news.heading.substring(0, 100) + "..." }}
             </p>
-            <button
-              class="btn-action-button text-white inline-flex items-center mt-1"
-            >
-              Learn More
-              <svg
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+           <router-link :to="`/post/${news.id}`" >
+                <button
+                class="
+                  btn-action-button
+                  text-white
+                  inline-flex
+                  items-center
+                  mt-4
+                  text-center
+                  mx-auto
+                "
+                  
+        
               >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
+                Learn More
+                <svg
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              </router-link>
           </div>
         </div>
       </div>
@@ -174,7 +186,7 @@ export default {
 
    computed: {
     learn() {
-      return this.$store.state.learn;
+      return this.$store.state.articles;
     },
    }
  
