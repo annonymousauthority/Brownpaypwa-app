@@ -67,8 +67,7 @@
     </h5>
     <h4 class="mb-10">
       <span
-        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-        consectetur modi molestias vero!</span
+        >Live happenings that influences market moves and trends.</span
       >
     </h4>
   </div>

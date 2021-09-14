@@ -100,17 +100,17 @@
                     Send Money to
                     <span class="relative inline-block px-2">
                       <div class="absolute inset-0 transform -skew-x-12"></div>
-                      <span class="relative">Family</span>
+                      <span class="relative">Your Loved Ones</span>
                     </span>
                     <span class="relative inline-block px-2">
                       <div class="absolute inset-0 transform -skew-x-12"></div>
-                      <span class="relative title">Everywhere</span>
+                      <span class="relative title">in Their Local Currency</span>
                     </span>
                   </span>
                 </h2>
                 <p class="text-base text-white md:text-3xl">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque rem aperiam, eaque ipsa quae.
+                  With our unique blockchain technology, you can send money in 
+                  minutes at low cost.
                 </p>
               </div>
               <form
@@ -172,7 +172,7 @@
                     focus:outline-none
                   "
                 >
-                  Subscribe
+                  Get Started
                 </a>
               </form>
               <a
@@ -337,8 +337,7 @@
               little or no <span class="title">Commission</span>.
             </h2>
             <p class="text-base text-white md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque rem aperiam, eaque ipsa quae.
+              Explore the world of Blockchain using BrownPay's remittance network.
             </p>
           </div>
           <div>
@@ -408,9 +407,8 @@
             Virtual Subscription <span class="title">Cards</span>
           </h2>
           <p class="text-base text-gray-700 md:text-lg text-left">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae. explicabo.
+            Our unique technology allows card-less 
+            subscription with virtual cards. No hidden charges.
           </p>
         </div>
       </div>

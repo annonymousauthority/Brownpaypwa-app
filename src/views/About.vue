@@ -159,8 +159,10 @@
                   </span>
                 </h2>
                 <p class="text-base text-white md:text-3xl">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque rem aperiam, eaque ipsa quae.
+                  BrownPay uses a unique technology which allows you to 
+                  send money to your loved ones in their local currency almost 
+                  instantly with the speed of the internet, experiencing no delay. 
+                  With us, you can transact with confidence.
                 </p>
               </div>
               <div>
@@ -300,12 +302,8 @@
             <span class="title">Transactions</span>
           </h2>
           <p class="text-base text-gray-700 md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-            eligendi, delectus consectetur nemo enim consequuntur itaque.
-            Deserunt quisquam maxime excepturi esse tenetur, praesentium itaque
-            rem maiores. Impedit tempora provident sint fugit, vel, numquam
-            repellat minima cumque esse optio distinctio incidunt, non ducimus
-            inventore. Sunt culpa quibusdam ex, nesciunt sapiente hic.
+            We have powered over 2million transactions and our 
+            customers always come back with masssive referrals.
           </p>
         </div>
       </div>

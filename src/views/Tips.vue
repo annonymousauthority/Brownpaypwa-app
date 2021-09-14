@@ -68,8 +68,8 @@
     </h5>
     <h4 class="mb-10">
       <span
-        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-        consectetur modi molestias vero!</span
+        >Find detailed strategies and topics to assist 
+        you make best crypto decisions on BrownPay.</span
       >
     </h4>
   </div>

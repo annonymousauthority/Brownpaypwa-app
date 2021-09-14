@@ -149,9 +149,10 @@
                 <span class="inline-block title">Finance</span>
               </h2>
               <p class="text-base text-white md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+                You’re will be a valuable asset to our company, 
+                and we cannot wait to have you join our team to 
+                see all that you can accomplish with us. 
+                
               </p>
             </div>
             <div class="text-left text-white">
@@ -268,10 +269,8 @@
             Our <span class="title">Philosophy</span>
           </h5>
           <p class="mb-6 text-gray-900">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae explicabo. Sed ut perspiciatis unde omnis iste natus error sit
-            voluptatem totam rem aperiam, eaque ipsa quae explicabo.
+            At BrownPay, what you need is what we give and 
+            what you see is what you get. Our word is our bond.
           </p>
         </div>
       </div>
@@ -374,9 +373,8 @@
           Our <span class="title">Vision</span>
         </h2>
         <p class="pr-5 mb-5 text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          At BrownPay, our unique assignment is to use our unique 
+          blockchain technology to fast track transactions.
         </p>
       </div>
     </div>
