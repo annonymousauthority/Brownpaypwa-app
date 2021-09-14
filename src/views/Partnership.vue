@@ -60,33 +60,28 @@
   </div>
 
   <!--First Section-->
-
-  <!-- Start of form -->
-    <div class="absolute inset-x-0 bottom-0">
-    </div>
-    <div
-      class="
-        px-4
-        mx-auto
-        sm:max-w-xl
-        md:max-w-full
-        lg:max-w-screen-xl
-        md:px-24
-        lg:px-8
-        lg:py-20
-      "
-    >
-      <div
-        class="
-          relative
-          max-w-2xl
-          sm:mx-auto
-          sm:max-w-xl
-          md:max-w-2xl
-          sm:text-center
-        "
-      >
-        <div class="bg-white rounded shadow-2xl p-7 sm:p-10 text-left">
+  <div class="relative">
+    <img :src="img" class="absolute inset-0 object-cover w-full h-full" alt="" />
+    <div class="relative bg-gray-900 bg-opacity-75">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="flex flex-col items-center justify-between xl:flex-row">
+          <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+            <h2 class="max-w-lg mb-6 font-sans text-4xl font-bold tracking-tight text-white sm:text-4xl text-left sm:leading-none">
+              Age-long
+             <span class="title">Relationships</span>
+            </h2>
+            <p class="max-w-xl mb-4 text-base text-white text-left md:text-lg">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
+            </p>
+            <!-- <a href="/" aria-label="" class="inline-flex justify-content-left text-white items-left font-semibold tracking-wider">
+              Learn more
+              <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+              </svg>
+            </a> -->
+          </div>
+          <div class="w-full max-w-xl xl:px-8 xl:w-5/12">
+                  <div class="bg-white rounded shadow-2xl p-7 sm:p-10 text-left">
           <h3
             class="
               mb-4
@@ -266,83 +261,14 @@
             </p>
           </form>
         </div>
+          </div>
+        </div>
       </div>
     </div>
- 
-
-  <!-- End of form -->
-
-  <!--last Section tarts-->
-
-  <div class="absolute inset-x-0 bottom-0 text-black"></div>
-  <div
-    class="
-      px-4
-      py-16
-      mx-auto
-      sm:max-w-xl
-      md:max-w-full
-      lg:max-w-screen-xl
-      md:px-24
-      lg:px-8
-      lg:py-20
-    "
-  >
-    <div
-      class="
-        relative
-        max-w-2xl
-        sm:mx-auto
-        sm:max-w-xl
-        md:max-w-2xl
-        sm:text-center
-      "
-    >
-
-     <header class="w-full container mx-auto">
-        <div class="flex flex-col items-center text-center py-12">
-            <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="#">
-               FAQ
-            </a>
-            <p class="text-lg text-gray-600">
-                Lorem Ipsum Dolor Sit Amet
-            </p>
-        </div>
-    </header>
-     <div class="w-full md:w-full mx-auto p-8">
-         <div class="shadow-md">
-            <div class="tab w-full overflow-hidden border-t text-left">
-               <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
-               <label class="block p-5 leading-normal cursor-pointer" for="tab-single-one">What is Brownpay</label>
-               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-yellow-600 leading-normal">
-                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-               </div>
-            </div>
-            <div class="tab w-full overflow-hidden border-t text-left">
-               <input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
-               <label class="block p-5 leading-normal cursor-pointer" for="tab-single-two">Is Brownpay available In my country?</label>
-               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-yellow-600 leading-normal">
-                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-               </div>
-            </div>
-            <div class="tab w-full overflow-hidden border-t text-left">
-               <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
-               <label class="block p-5 leading-normal cursor-pointer" for="tab-single-three">What are the commission fees?</label>
-               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-yellow-600 leading-normal">
-                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-               </div>
-            </div>
-            <div class="tab w-full overflow-hidden border-t text-left">
-               <input class="absolute opacity-0" id="tab-single-four" type="radio" name="tabs2">
-               <label class="block p-5 leading-normal cursor-pointer" for="tab-single-four">How to get started?</label>
-               <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-yellow-600 leading-normal">
-                  <p class="p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
-               </div>
-            </div>
-         </div>
-     </div>
-    </div>
   </div>
+
+  <!-- Start of form -->
+  
   <Footer />
 </template>
 
@@ -363,20 +289,6 @@ export default {
     Footer,
   },
 
-  mounted(){
-      var myRadios = document.getElementsByName('tabs2');
-      var setCheck;
-      var x = 0;
-      for(x = 0; x < myRadios.length; x++){
-          myRadios[x].onclick = function(){
-              if(setCheck != this){
-                   setCheck = this;
-              }else{
-                  this.checked = false;
-                  setCheck = null;
-          }
-          };
-      }
-  }
+
 };
 </script>

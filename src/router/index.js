@@ -6,6 +6,7 @@ import Blog from "../views/Blog.vue"
 import Market from "../views/Market.vue"
 import Tips from "../views/Tips.vue"
 import Post from "../views/PostDetails.vue"
+import Contact from "../views/Contact.vue"
 
 
 const routes = [
@@ -53,6 +54,11 @@ const routes = [
     path: "/post/:id",
     name: "Post",
     component: Post
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact
   }
 
   

@@ -69,6 +69,23 @@
             >About us</a
           ></router-link>
         </li>
+        <li>
+          <router-link to="/contact">
+          <a
+            href="#"
+            aria-label="Contact Us"
+            title="Contact Us"
+            class="
+              font-medium
+              tracking-wide
+              text-gray-700
+              transition-colors
+              duration-200
+              hover:text-deep-purple-accent-400
+            "
+            >Contact us</a
+          ></router-link>
+        </li>
       </ul>
       <ul class="flex items-center hidden space-x-8 lg:flex">
         <li>
