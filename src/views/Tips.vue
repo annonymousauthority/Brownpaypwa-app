@@ -110,7 +110,7 @@
           rounded-lg
           overflow-hidden
         "
-        v-for="news in tips.slice(3, 4)"
+        v-for="news in tips.slice(13, 14)"
         :key="news"
       >
         <div
@@ -174,7 +174,8 @@
               >
                 {{ news.date }}
               </p>
-              <button
+             <router-link :to="`/post/${news.id}`" >
+                <button
                 class="
                   btn-action-button
                   text-white
@@ -184,6 +185,8 @@
                   text-center
                   mx-auto
                 "
+                  
+        
               >
                 Learn More
                 <svg
@@ -199,6 +202,7 @@
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
               </button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -206,7 +210,7 @@
       <div class="lg:py-2 -mb-10 lg:w-1/2 lg:text-left text-center">
         <div
           class="py-2 flex flex-wrap md:flex-nowrap"
-          v-for="news in tips.slice(0, 2)"
+          v-for="news in tips.slice(11, 13)"
           :key="news"
         >
           <div
@@ -227,23 +231,35 @@
             <p class="text-left pr-4 leading-relaxed">
               {{ news.heading }}
             </p>
-            <button
-              class="btn-action-button text-white inline-flex items-center mb-4"
-            >
-              Learn More
-              <svg
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+            <router-link :to="`/post/${news.id}`" >
+                <button
+                class="
+                  btn-action-button
+                  text-white
+                  inline-flex
+                  items-center
+                  mt-4
+                  text-center
+                  mx-auto
+                "
+                  
+        
               >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
+                Learn More
+                <svg
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              </router-link>
           </div>
         </div>
       </div>
@@ -286,7 +302,7 @@
           rounded-lg
           overflow-hidden
         "
-        v-for="news in tips.slice(4, 5)"
+        v-for="news in tips.slice(14, 15)"
         :key="news"
       >
         <div
@@ -350,7 +366,8 @@
               >
                 {{ news.date }}
               </p>
-              <button
+            <router-link :to="`/post/${news.id}`" >
+                <button
                 class="
                   btn-action-button
                   text-white
@@ -360,6 +377,8 @@
                   text-center
                   mx-auto
                 "
+                  
+        
               >
                 Learn More
                 <svg
@@ -375,6 +394,7 @@
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
               </button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -382,7 +402,7 @@
       <div class="lg:py-2 -mb-10 lg:w-1/2 lg:text-left text-center">
         <div
           class="py-2 flex flex-wrap md:flex-nowrap"
-          v-for="news in tips.slice(5, 7)"
+          v-for="news in tips.slice(16, 18)"
           :key="news"
         >
           <div
@@ -403,23 +423,35 @@
             <p class="text-left pr-4 leading-relaxed">
               {{ news.heading }}
             </p>
-            <button
-              class="btn-action-button text-white inline-flex items-center mb-4"
-            >
-              Learn More
-              <svg
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+            <router-link :to="`/post/${news.id}`" >
+                <button
+                class="
+                  btn-action-button
+                  text-white
+                  inline-flex
+                  items-center
+                  mt-4
+                  text-center
+                  mx-auto
+                "
+                  
+        
               >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
+                Learn More
+                <svg
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              </router-link>
           </div>
         </div>
       </div>
@@ -445,7 +477,7 @@ export default {
 
    computed: {
     tips() {
-      return this.$store.state.tips;
+      return this.$store.state.articles;
     },
    }
  

@@ -1,6 +1,7 @@
 <template>
   <Navbar />
   <!---Banner Section-->
+  
   <div class="banner">
     <div class="max-w-8xl mx-auto px-3 lg:px-8">
       <div class="flex items-center justify-between flex-wrap">
@@ -152,15 +153,19 @@
               >
                 {{ news.date }}
               </p>
-              <button
+            <router-link :to="`/post/${news.id}`" >
+                <button
                 class="
                   btn-action-button
                   text-white
                   inline-flex
                   items-center
                   mt-4
-                  text-left
+                  text-center
+                  mx-auto
                 "
+                  
+        
               >
                 Learn More
                 <svg
@@ -176,6 +181,7 @@
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
               </button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -205,23 +211,35 @@
             <p class="text-left pr-4 leading-relaxed">
               {{ news.heading }}
             </p>
-            <button
-              class="btn-action-button text-white inline-flex items-center mb-4"
-            >
-              Learn More
-              <svg
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+           <router-link :to="`/post/${news.id}`" >
+                <button
+                class="
+                  btn-action-button
+                  text-white
+                  inline-flex
+                  items-center
+                  mt-4
+                  text-center
+                  mx-auto
+                "
+                  
+        
               >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
+                Learn More
+                <svg
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              </router-link>
           </div>
           <div class="md:h-52 md:mb-0 mb-6 flex flex-col">
             <img
@@ -295,23 +313,35 @@
             <p class="text-left mb-4 text-gray-700">
               {{ news.heading }}
             </p>
-            <button
-              class="btn-action-button text-white inline-flex items-center mt-1"
-            >
-              Learn More
-              <svg
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+         <router-link :to="`/post/${news.id}`" >
+                <button
+                class="
+                  btn-action-button
+                  text-white
+                  inline-flex
+                  items-center
+                  mt-4
+                  text-center
+                  mx-auto
+                "
+                  
+        
               >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
+                Learn More
+                <svg
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              </router-link>
           </div>
         </div>
       </div>
@@ -342,6 +372,7 @@
           class="py-2 flex flex-wrap md:flex-nowrap"
           v-for="news in articles.slice(7, 9)"
           :key="news"
+         
         >
           <div
             class="md:h-52 md:pt-2 md:mr-8 xl:mr-6 md:mb-0 mb-6 flex flex-col"
@@ -362,24 +393,35 @@
               {{ news.heading }}
             </p>
 
-            <button
-              class="btn-action-button text-white inline-flex items-center mb-4"
-              @click="postDetails(news)"
-            >
-              Learn More
-              <svg
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+           <router-link :to="`/post/${news.id}`" >
+                <button
+                class="
+                  btn-action-button
+                  text-white
+                  inline-flex
+                  items-center
+                  mt-4
+                  text-center
+                  mx-auto
+                "
+                  
+        
               >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
+                Learn More
+                <svg
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+              </router-link>
           </div>
         </div>
       </div>
@@ -400,6 +442,7 @@
         "
         v-for="news in articles.slice(9, 10)"
         :key="news.id"
+       
       
         
       >
@@ -413,50 +456,22 @@
             border-t border-gray-900
           "
         >
-          <a href="/" aria-label="Article"
-            ><img
+        <img
               :src="news.img"
               class="object-cover w-full xl:h-full h-64 rounded"
               alt=""
-          /></a>
+          />
+         
           <div class="py-5 text-left">
-            <a
-              href="/"
-              aria-label="Article"
-              class="
-                inline-block
-                mb-3
-                text-black
-                transition-colors
-                duration-200
-                hover:text-deep-purple-accent-700
-              "
-              >
-              <router-link :to="`/post-details/` + news.id">
-                  <p class="text-2xl font-bold leading-5">
+               <p class="text-2xl font-bold leading-5">
                 {{ news.title }}
               </p>
-              </router-link>
-            </a
-            >
-            <p class="mb-4 text-gray-700">
+            
+            <p class="mt-4 text-gray-700">
               {{ news.heading.substring(0, 100) + "..." }}
             </p>
             <div class="flex space-x-4">
-              <a
-                href="/"
-                aria-label="Likes"
-                class="
-                  flex
-                  items-start
-                  text-gray-800
-                  transition-colors
-                  duration-200
-                  hover:text-deep-purple-accent-700
-                  group
-                "
-              >
-              </a>
+            
               <p
                 class="
                   mb-2
@@ -469,7 +484,8 @@
                 {{ news.date }}
               </p>
 
-              <button
+              <router-link :to="`/post/${news.id}`" >
+                <button
                 class="
                   btn-action-button
                   text-white
@@ -479,6 +495,7 @@
                   text-center
                   mx-auto
                 "
+                  
         
               >
                 Learn More
@@ -495,12 +512,21 @@
                   <path d="M12 5l7 7-7 7"></path>
                 </svg>
               </button>
+              </router-link>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+     <!-- Text Header -->
+   
+   
+
+
+ 
+
 
   <!--Last section Ends-->
 
@@ -519,6 +545,8 @@ export default {
     articles() {
       return this.$store.state.articles;
     },
+
+    
 
    
   },

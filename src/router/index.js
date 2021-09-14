@@ -5,7 +5,7 @@ import Partnership from "../views/Partnership.vue"
 import Learn from "../views/Learn.vue"
 import Market from "../views/Market.vue"
 import Tips from "../views/Tips.vue"
-import PostDetails from "../views/PostDetails.vue"
+import Post from "../views/PostDetails.vue"
 
 
 const routes = [
@@ -50,9 +50,9 @@ const routes = [
     component: Tips
   },
   {
-    path: "/post-details",
-    name: "post-details",
-    component: PostDetails
+    path: "/post/:id",
+    name: "Post",
+    component: Post
   }
 
   
