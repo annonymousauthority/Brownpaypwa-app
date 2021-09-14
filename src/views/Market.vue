@@ -67,7 +67,7 @@
     </h5>
     <h4 class="mb-10">
       <span
-        >Live happenings that influences market moves and trends.</span
+        >Get updated on live happenings that influence market moves and trends.</span
       >
     </h4>
   </div>
