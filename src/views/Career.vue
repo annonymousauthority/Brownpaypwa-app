@@ -373,7 +373,7 @@
           Our <span class="title">Vision</span>
         </h2>
         <p class="pr-5 mb-5 text-gray-700 md:text-lg">
-          At BrownPay, our unique assignment is to use our unique 
+          Our assignment at BrownPay is to use our unique 
           blockchain technology to fast track transactions.
         </p>
       </div>
