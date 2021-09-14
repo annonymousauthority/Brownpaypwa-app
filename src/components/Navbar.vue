@@ -35,11 +35,11 @@
           >
         </li>
         <li>
-         <router-link  to="/learn">
+         <router-link  to="/blog">
           <a
             href="#"
-            aria-label="Learn"
-            title="Learn"
+            aria-label="Blog"
+            title=""
             class="
               font-medium
               tracking-wide
@@ -48,7 +48,7 @@
               duration-200
               hover:text-deep-purple-accent-400
             "
-            >Learn</a
+            >Blog</a
           >
          </router-link>
         </li>
@@ -201,7 +201,7 @@
                 </li>
                 <li>
                   <a
-                    href="/learn"
+                    href="/blog"
                     aria-label="Our product"
                     title="Our product"
                     class="
@@ -212,7 +212,7 @@
                       duration-200
                       hover:text-deep-purple-accent-400
                     "
-                    >Learn</a
+                    >Blog</a
                   >
                 </li>
                 

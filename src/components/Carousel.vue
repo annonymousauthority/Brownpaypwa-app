@@ -70,7 +70,7 @@
         </article>
       </div>
     </header>
-    <div class="posts-wrapper max-w-7xl hide-on-mobile mr-0 xl:-ml-40 xl:ml-92">
+    <div class="posts-wrapper max-w-7xl hide-on-mobile mr-0 ">
       <article class="post post--active">
         <div class="progress-bar">
           <div class="progress-bar__fill"></div>

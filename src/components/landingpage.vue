@@ -52,6 +52,7 @@
                     mb-6
                     font-sans
                     xl:text-6xl
+                    lg:text-4xl
                     text-3xl
                     font-bold
                     tracking-normal
@@ -61,7 +62,7 @@
                     leading-8
                   "
                 >
-                  <span class="relative inline-block">
+                  <span class="relative inline-block   lg:text-5xl text-center">
                     <svg
                       viewBox="0 0 52 24"
                       fill="currentColor"
@@ -123,30 +124,7 @@
                   md:px-16
                 "
               >
-                <input
-                  placeholder="Email"
-                  required=""
-                  type="text"
-                  class="
-                    flex-grow
-                    w-full
-                    h-12
-                    px-4
-                    mb-3
-                    text-black
-                    transition
-                    duration-200
-                    border-2 border-transparent
-                    rounded
-                    appearance-none
-                    md:mr-2
-                    md:mb-0
-                    bg-deep-purple-900
-                    focus:border-teal-accent-700
-                    focus:outline-none
-                    focus:shadow-outline
-                  "
-                />
+              
                 <a
                   href="/"
                   class="
@@ -323,7 +301,8 @@
                 max-w-lg
                 mb-6
                 font-sans
-                xl:text-6xl
+                xl:text-5xl
+                lg:text-4xl
                 text-3xl
                 font-bold
                 tracking-normal
