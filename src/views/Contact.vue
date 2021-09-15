@@ -131,7 +131,7 @@
           </div>
           <div class="mt-4 mb-2 sm:mb-4">
             <button
-              type="submit"
+              @click="sendEmail()"
               class="
                 inline-flex
                 items-center
