@@ -126,6 +126,35 @@
               />
             </div>
             <div class="mb-1 sm:mb-2">
+              <label for="firstName" class="inline-block mb-1 font-medium"
+                >Email</label
+              >
+              <input
+                placeholder="Enter Email"
+                required=""
+                type="text"
+                class="
+                  flex-grow
+                  w-full
+                  h-12
+                  px-4
+                  mb-2
+                  transition
+                  duration-200
+                  bg-white
+                  border border-gray-300
+                  rounded
+                  shadow-sm
+                  appearance-none
+                  focus:border-deep-purple-accent-400
+                  focus:outline-none
+                  focus:shadow-outline
+                "
+                id="Email"
+                name="Email"
+              />
+            </div>
+            <div class="mb-1 sm:mb-2">
               <label for="company" class="inline-block mb-1 font-medium"
                 >Company</label
               >

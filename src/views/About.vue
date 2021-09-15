@@ -16,7 +16,7 @@
             sm:w-auto
           "
         >
-          <ul class="items-center space-x-10 flex text-1xl p-4">         
+          <ul class="items-center space-x-10 flex text-1xl p-4">
             <li>
               <router-link to="/career">
                 <a
@@ -159,10 +159,10 @@
                   </span>
                 </h2>
                 <p class="text-base text-white md:text-3xl">
-                  BrownPay uses a unique technology which allows you to 
-                  send money to your loved ones in their local currency almost 
-                  instantly with the speed of the internet, experiencing no delay. 
-                  With us, you can transact with confidence.
+                  BrownPay uses a unique technology which allows you to send
+                  money to your loved ones in their local currency almost
+                  instantly with the speed of the internet, experiencing no
+                  delay. With us, you can transact with confidence.
                 </p>
               </div>
               <div>
@@ -216,19 +216,15 @@
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
       <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
         <a href="#" class="mb-6 sm:mx-auto">
-          <div
-            class="
-              flex
-              
-              w-12
-              h-12
-              rounded-full
-              title
-            "
-          >
+          <div class="flex w-12 h-12 rounded-full title">
             <svg
-              class="w-20 h-20 text-deep-purple-accent-400 items-center
-              justify-center"
+              class="
+                w-20
+                h-20
+                text-deep-purple-accent-400
+                items-center
+                justify-center
+              "
               stroke="currentColor"
               viewBox="0 0 52 52"
             >
@@ -302,8 +298,8 @@
             <span class="title">Transactions</span>
           </h2>
           <p class="text-base text-gray-700 md:text-lg">
-            We have powered over 2million transactions and our 
-            customers always come back with masssive referrals.
+            We have powered over 2million transactions and our customers always
+            come back with masssive referrals.
           </p>
         </div>
       </div>
@@ -340,11 +336,13 @@
         </p>
       </div>
       <div class="text-center md:border-r">
-        <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl mt-5 md:mt-0">3</h6>
+        <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl mt-5 md:mt-0">
+          3
+        </h6>
         <p
           class="
             text-sm
-            font-medium 
+            font-medium
             tracking-widest
             text-gray-800
             uppercase
@@ -355,7 +353,9 @@
         </p>
       </div>
       <div class="text-center">
-        <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl mt-5 md:mt-0">5</h6>
+        <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl mt-5 md:mt-0">
+          5
+        </h6>
         <p
           class="
             text-sm
@@ -374,87 +374,185 @@
 
   <!-- Second-section -->
 
- 
-
   <!-- End of section 2 -->
 
   <!--last -->
   <div class="relative">
-    <img :src="imgl" class="absolute inset-0 object-cover w-full h-full" alt="" />
+    <img
+      :src="imgl"
+      class="absolute inset-0 object-cover w-full h-full"
+      alt=""
+    />
     <div class="relative bg-gray-900 bg-opacity-75">
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div
+        class="
+          px-4
+          py-16
+          mx-auto
+          sm:max-w-xl
+          md:max-w-full
+          lg:max-w-screen-xl
+          md:px-24
+          lg:px-8
+          lg:py-20
+        "
+      >
         <div class="flex flex-col items-center justify-between xl:flex-row">
           <h2
-      class="
-        max-w-xl
-        mt-13
-        font-sans
-        xl:text-4xl
-        text-4xl
-        font-bold
-        text-white
-        sm:text-4xl
-      "
-    >
-      Our Executive Team
-    </h2>
-  </div>
-  <div
-    class="
-      px-4
-      py-8
-      mx-auto
-      sm:max-w-xl
-      md:max-w-full
-      lg:max-w-screen-xl
-      md:px-24
-      lg:px-8
-      lg:py-4
-    "
-  >
- <div class="grid gap-10 mx-auto lg:max-w-screen-lg md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3  py-10">
-      <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 md:w-40 md:h-40 mb-2 xl:w-60 xl:h-60 rounded-full shadow" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
-        <div class="flex flex-col items-center">
-          <p class="text-lg font-bold text-white">Oliver Aguilerra</p>
-          <p class="text-sm text-white">Product Manager</p>
+            class="
+              max-w-xl
+              mt-13
+              font-sans
+              xl:text-4xl
+              text-4xl
+              font-bold
+              text-white
+              sm:text-4xl
+            "
+          >
+            Our Executive Team
+          </h2>
         </div>
-      </div>
-      <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 md:w-40 md:h-40 mb-2 xl:w-60 xl:h-60 rounded-full shadow" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-        <div class="flex flex-col items-center">
-          <p class="text-lg font-bold text-white">Marta Clermont</p>
-          <p class="text-sm text-white">Design Team Lead</p>
-        </div>
-      </div>
-      <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 mb-2 md:w-40 md:h-40 xl:w-60 xl:h-60 rounded-full shadow" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-        <div class="flex flex-col items-center">
-          <p class="text-lg font-bold text-white">Anthony Geek</p>
-          <p class="text-sm text-white">CTO, Lorem Inc.</p>
-        </div>
-      </div>
-      <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 md:w-40 md:h-40 xl:w-60 xl:h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-        <div class="flex flex-col items-center">
-          <p class="text-lg font-bold text-white">Alice Melbourne</p>
-          <p class="text-sm text-white">Human Resources</p>
-        </div>
-      </div>
-      <div class="flex flex-col items-center">
-        <img class="object-cover w-60 h-60 md:w-40 md:h-40 xl:w-60 xl:h-60 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="Person" />
-        <div class="flex flex-col items-center">
-          <p class="text-lg font-bold text-white">Martin Garix</p>
-          <p class="text-sm text-white">Bad boy</p>
+        <div
+          class="
+            px-4
+            py-8
+            mx-auto
+            sm:max-w-xl
+            md:max-w-full
+            lg:max-w-screen-xl
+            md:px-24
+            lg:px-8
+            lg:py-4
+          "
+        >
+          <div
+            class="
+              grid
+              gap-10
+              mx-auto
+              lg:max-w-screen-lg
+              md:grid-cols-2
+              sm:grid-cols-2
+              lg:grid-cols-3
+              py-10
+            "
+          >
+            <div class="flex flex-col items-center">
+              <img
+                class="
+                  object-cover
+                  w-60
+                  h-60
+                  md:w-40
+                  md:h-40
+                  mb-2
+                  xl:w-60
+                  xl:h-60
+                  rounded-full
+                  shadow
+                "
+                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                alt="Person"
+              />
+              <div class="flex flex-col items-center">
+                <p class="text-lg font-bold text-white">Oliver Aguilerra</p>
+                <p class="text-sm text-white">Product Manager</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="
+                  object-cover
+                  w-60
+                  h-60
+                  md:w-40
+                  md:h-40
+                  mb-2
+                  xl:w-60
+                  xl:h-60
+                  rounded-full
+                  shadow
+                "
+                src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                alt="Person"
+              />
+              <div class="flex flex-col items-center">
+                <p class="text-lg font-bold text-white">Marta Clermont</p>
+                <p class="text-sm text-white">Design Team Lead</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="
+                  object-cover
+                  w-60
+                  h-60
+                  mb-2
+                  md:w-40
+                  md:h-40
+                  xl:w-60
+                  xl:h-60
+                  rounded-full
+                  shadow
+                "
+                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                alt="Person"
+              />
+              <div class="flex flex-col items-center">
+                <p class="text-lg font-bold text-white">Anthony Geek</p>
+                <p class="text-sm text-white">CTO, Lorem Inc.</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="
+                  object-cover
+                  w-60
+                  h-60
+                  md:w-40
+                  md:h-40
+                  xl:w-60
+                  xl:h-60
+                  mb-2
+                  rounded-full
+                  shadow
+                "
+                src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                alt="Person"
+              />
+              <div class="flex flex-col items-center">
+                <p class="text-lg font-bold text-white">Alice Melbourne</p>
+                <p class="text-sm text-white">Human Resources</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img
+                class="
+                  object-cover
+                  w-60
+                  h-60
+                  md:w-40
+                  md:h-40
+                  xl:w-60
+                  xl:h-60
+                  mb-2
+                  rounded-full
+                  shadow
+                "
+                src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                alt="Person"
+              />
+              <div class="flex flex-col items-center">
+                <p class="text-lg font-bold text-white">Martin Garix</p>
+                <p class="text-sm text-white">Bad boy</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-        </div>
-      </div>
-    </div>
   </div>
-
-   
 
   <Footer />
 </template>
@@ -466,7 +564,7 @@ export default {
   data() {
     return {
       img: require("../assets/4940806.jpg"),
-       imgl:require('../assets/5690588.jpg')
+      imgl: require("../assets/5690588.jpg"),
     };
   },
   components: { Navbar, Footer },

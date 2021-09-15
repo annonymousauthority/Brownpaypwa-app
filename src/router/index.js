@@ -7,6 +7,8 @@ import Market from "../views/Market.vue"
 import Tips from "../views/Tips.vue"
 import Post from "../views/PostDetails.vue"
 import Contact from "../views/Contact.vue"
+import Signin from "../views/Signin.vue"
+import Register from "../views/Register.vue"
 
 
 const routes = [
@@ -59,6 +61,16 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact
+  },
+  {
+    path: "/signin",
+    name: Signin,
+    component:Signin
+  },
+  {
+    path: "/register",
+    name: Register,
+    component:Register
   }
 
   

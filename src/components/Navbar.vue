@@ -92,7 +92,7 @@
       <ul class="flex items-center hidden space-x-8 lg:flex">
         <li>
           <a
-            href="/"
+            href="/signin"
             aria-label="Sign In"
             title="Sign In"
             class="
@@ -275,7 +275,7 @@
 
                 <li>
                   <a
-                    href="/"
+                    href="/signup"
                     class="
                       inline-flex
                       btn-action-button
