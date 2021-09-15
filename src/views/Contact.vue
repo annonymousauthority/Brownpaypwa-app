@@ -340,6 +340,7 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/footer.vue";
+import $ from "jquery";
 export default {
   components: {
     Navbar,
@@ -374,8 +375,8 @@ export default {
   },
 
   methods: {
-    sendEmail(e) {
-      e.preventDefault();
+    sendEmail() {
+      // e.preventDefault();
       var URL = "https://dmwpuxnmia.execute-api.eu-west-2.amazonaws.com/Alpha/";
       // let permittedURL = "http://www.3xpresship.com";
       var data = {
