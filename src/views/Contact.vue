@@ -358,6 +358,37 @@ export default {
       };
     }
   },
+  method(){
+  sendEmail(e) {
+      e.preventDefault();
+      var URL =
+        "https://dmwpuxnmia.execute-api.eu-west-2.amazonaws.com/Alpha/";
+      // let permittedURL = "http://www.3xpresship.com";
+      var data = {
+        name: this.form.name,
+        email: this.form.email,
+        message: this.form.message,
+        subject: this.form.subject,
+      };
+      $.ajax({
+        type: "POST",
+        url: URL,
+        dataType: "json",
+        crossDomain: "true",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(data),
+        success: function () {
+          // clear form and show a success message
+          alert("Email sent successfully");
+          // document.getElementById("contact-form").reset();
+          location.reload();
+        },
+        error: function () {
+          // show an error message
+          alert("Unable to send Email, Please try again.");
+        },
+      });
+  }
 };
 </script>
 <style
