@@ -65,7 +65,7 @@
                 focus:shadow-outline
               "
               id="fullName"
-              v-model="name"
+              v-model="form.name"
               name="fullName"
             />
           </div>
@@ -95,7 +95,7 @@
                 focus:shadow-outline
               "
               id="email"
-              v-model="email"
+              v-model="form.email"
               name="Email"
             />
           </div>
@@ -124,7 +124,7 @@
                 name="comment"
                 rows="5"
                 cols="40"
-                v-model="message"
+                v-model="form.message"
               >
               </textarea>
             </label>
