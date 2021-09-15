@@ -1,16 +1,18 @@
 <template>
   <navbar />
- <header class="w-full container mx-auto">
-        <div class="flex flex-col items-center py-12">
-            <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="#">
-               Get in Touch with us
-            </a>
-            <p class="text-lg text-gray-600">
-             Please fill the form below for further Enquiry
-            </p>
-        </div>
-    </header>
-
+  <header class="w-full container mx-auto">
+    <div class="flex flex-col items-center py-12">
+      <a
+        class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl"
+        href="#"
+      >
+        Get in Touch with us
+      </a>
+      <p class="text-lg text-gray-600">
+        Please fill the form below for further Enquiry
+      </p>
+    </div>
+  </header>
 
   <div class="absolute inset-x-0 bottom-0"></div>
   <div
@@ -23,7 +25,6 @@
       xl:min-w-screen-md
       md:px-24
       lg:px-8
-    
     "
   >
     <div
@@ -37,7 +38,6 @@
       "
     >
       <div class="bg-white rounded shadow-2xl p-7 sm:p-10 text-left">
-      
         <form>
           <div class="mb-1 sm:mb-2">
             <label for="firstName" class="inline-block mb-1 font-medium"
@@ -99,7 +99,7 @@
               name="Email"
             />
           </div>
-         
+
           <div class="mb-1 sm:mb-2">
             <label class="text-gray-700 mb-5" for="message">
               <textarea
@@ -345,14 +345,14 @@ export default {
     Navbar,
     Footer,
   },
-  
+
   data() {
     return {
       selected: null,
       form: {
         email: "",
         name: "",
-        message:""
+        message: "",
       },
     };
   },
@@ -372,17 +372,16 @@ export default {
       };
     }
   },
-  method(){
-  sendEmail(e) {
+
+  methods: {
+    sendEmail(e) {
       e.preventDefault();
-      var URL =
-        "https://dmwpuxnmia.execute-api.eu-west-2.amazonaws.com/Alpha/";
+      var URL = "https://dmwpuxnmia.execute-api.eu-west-2.amazonaws.com/Alpha/";
       // let permittedURL = "http://www.3xpresship.com";
       var data = {
         name: this.form.name,
         email: this.form.email,
         message: this.form.message,
-
       };
       $.ajax({
         type: "POST",
@@ -402,7 +401,8 @@ export default {
           alert("Unable to send Email, Please try again.");
         },
       });
-  }
+    },
+  },
 };
 </script>
 <style
