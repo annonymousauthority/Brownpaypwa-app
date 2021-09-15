@@ -65,6 +65,7 @@
                 focus:shadow-outline
               "
               id="fullName"
+              v-model="name"
               name="fullName"
             />
           </div>
@@ -94,6 +95,7 @@
                 focus:shadow-outline
               "
               id="email"
+              v-model="email"
               name="Email"
             />
           </div>
@@ -122,6 +124,7 @@
                 name="comment"
                 rows="5"
                 cols="40"
+                v-model="message"
               >
               </textarea>
             </label>
@@ -342,6 +345,17 @@ export default {
     Navbar,
     Footer,
   },
+  
+  data() {
+    return {
+      selected: null,
+      form: {
+        email: "",
+        name: "",
+        message:""
+      },
+    };
+  },
 
   mounted() {
     var myRadios = document.getElementsByName("tabs2");
@@ -368,7 +382,7 @@ export default {
         name: this.form.name,
         email: this.form.email,
         message: this.form.message,
-        subject: this.form.subject,
+
       };
       $.ajax({
         type: "POST",
