@@ -13,9 +13,9 @@
   >
     <div class="relative flex items-center justify-between">
       <router-link to="/">
-      <a class="flex items-center" href="#">
-        <img class="h-12 w-auto sm:h-12" :src="logo" alt="site" />
-      </a>
+        <a class="flex items-center" href="#">
+          <img class="h-12 w-auto sm:h-12" :src="logo" alt="site" />
+        </a>
       </router-link>
       <ul class="items-center hidden space-x-8 lg:flex">
         <li>
@@ -35,56 +35,58 @@
           >
         </li>
         <li>
-         <router-link  to="/blog">
-          <a
-            href="#"
-            aria-label="Blog"
-            title=""
-            class="
-              font-medium
-              tracking-wide
-              text-gray-700
-              transition-colors
-              duration-200
-              hover:text-deep-purple-accent-400
-            "
-            >Blog</a
-          >
-         </router-link>
+          <router-link to="/blog">
+            <a
+              href="#"
+              aria-label="Blog"
+              title=""
+              class="
+                font-medium
+                tracking-wide
+                text-gray-700
+                transition-colors
+                duration-200
+                hover:text-deep-purple-accent-400
+              "
+              >Blog</a
+            >
+          </router-link>
         </li>
         <li>
           <router-link to="/about">
-          <a
-            href="/"
-            aria-label="About us"
-            title="About us"
-            class="
-              font-medium
-              tracking-wide
-              text-gray-700
-              transition-colors
-              duration-200
-              hover:text-deep-purple-accent-400
-            "
-            >About us</a
-          ></router-link>
+            <a
+              href="/"
+              aria-label="About us"
+              title="About us"
+              class="
+                font-medium
+                tracking-wide
+                text-gray-700
+                transition-colors
+                duration-200
+                hover:text-deep-purple-accent-400
+              "
+              >About us</a
+            ></router-link
+          >
         </li>
         <li>
           <router-link to="/contact">
-          <a
-            href="#"
-            aria-label="Contact Us"
-            title="Contact Us"
-            class="
-              font-medium
-              tracking-wide
-              text-gray-700
-              transition-colors
-              duration-200
-              hover:text-deep-purple-accent-400
-            "
-            >Contact us</a
-          ></router-link>
+            <a
+              href="#"
+              aria-label="Contact Us"
+              title="Contact Us"
+              class="
+                font-medium
+                tracking-wide
+                text-gray-700
+                transition-colors
+                duration-200
+                hover:text-deep-purple-accent-400
+              "
+              >Contact us</a
+            ></router-link
+          >
         </li>
       </ul>
       <ul class="flex items-center hidden space-x-8 lg:flex">
@@ -232,24 +234,45 @@
                     >Blog</a
                   >
                 </li>
-                
+
                 <li>
-                <router-link to="/about">
-                  <a
-                    href="/"
-                    aria-label="About us"
-                    title="About us"
-                    class="
-                      font-medium
-                      tracking-wide
-                      text-gray-700
-                      transition-colors
-                      duration-200
-                      hover:text-deep-purple-accent-400
-                    "
-                    >About us</a
-                  ></router-link>
+                  <router-link to="/about">
+                    <a
+                      href="/"
+                      aria-label="About us"
+                      title="About us"
+                      class="
+                        font-medium
+                        tracking-wide
+                        text-gray-700
+                        transition-colors
+                        duration-200
+                        hover:text-deep-purple-accent-400
+                      "
+                      >About us</a
+                    ></router-link
+                  >
                 </li>
+
+                <li>
+                  <router-link to="/contact">
+                    <a
+                      href="#"
+                      aria-label="Contact Us"
+                      title="Contact Us"
+                      class="
+                        font-medium
+                        tracking-wide
+                        text-gray-700
+                        transition-colors
+                        duration-200
+                        hover:text-deep-purple-accent-400
+                      "
+                      >Contact us</a
+                    ></router-link
+                  >
+                </li>
+
                 <li>
                   <a
                     href="/"
