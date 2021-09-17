@@ -9,7 +9,8 @@ import Post from "../views/PostDetails.vue"
 import Contact from "../views/Contact.vue"
 import Signin from "../views/Signin.vue"
 import Register from "../views/Register.vue"
-
+import Dashboard from "../views/Dashboard.vue"
+import DashboardMain from "../components/DashboardMain.vue"
 
 const routes = [
   {
@@ -71,6 +72,19 @@ const routes = [
     path: "/register",
     name: Register,
     component:Register
+  },
+  {
+    path: "/dashboard/main",
+    name: Dashboard,
+    component: Dashboard,
+
+    children: [
+      {
+        path: "/dashboard/main",
+        name: DashboardMain,
+        component: DashboardMain
+      }
+    ]
   }
 
   

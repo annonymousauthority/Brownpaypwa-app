@@ -273,10 +273,28 @@ export default createStore({
 
        },
     ],
+      sideBarOpen: state => {
+        return state.sideBarOpen
+      }
+
+    
 
     
   },
-  mutations: {},
-  actions: {},
+   getters: {
+     sideBarOpen: state => {
+       return state.sideBarOpen
+     }
+   },
+  mutations: {
+      toggleSidebar(state) {
+        state.sideBarOpen = !state.sideBarOpen
+      }
+  },
+  actions: {
+     toggleSidebar(context) {
+       context.commit('toggleSidebar')
+     }
+  },
   modules: {},
 });
