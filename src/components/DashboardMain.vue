@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-2">
+  <div class="xl:col-span-2 lg:col-span-5">
     <div class="shadow-xl">
       <div class="flex flex-col items-center mt-6 -mx-2">
         <img
@@ -36,7 +36,7 @@
           </svg>
         </h4>
         <div
-          class="flex flex-wrap overflow-hidden xl:-mx-4"
+          class="flex flex-wrap overflow-hidden xl:-mx-4 mb-5"
           v-for="money in prices"
           :key="money.btc"
         >
@@ -90,14 +90,255 @@
     </div>
   </div>
 
-  <div class="col-span-4">
+  <div class="xl:col-span-4 lg:col-span-6">
     <div class="shadow-xl">
-      <div class="flex flex-col items-center mt-6 -mx-2 py-8">
-        <h1 class="text-black text-xl">Carousel card</h1>
+      <div class="flex flex-col items-center mt-6 -mx-2">
+        <div class="carousel-inner relative overflow-hidden w-full h-96">
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-1"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="carousel-item absolute opacity-0" style="height: 50vh">
+            <div
+              class="
+                block
+                h-full
+                w-full
+                bg-yellow-300
+                text-white text-5xl text-center
+              "
+            >
+              Slide 1
+            </div>
+          </div>
+          <label
+            for="carousel-3"
+            class="
+              prev
+              control-1
+              w-10
+              h-10
+              ml-2
+              md:ml-10
+              absolute
+              cursor-pointer
+              hidden
+              text-3xl
+              font-bold
+              text-black
+              hover:text-white
+              rounded-full
+              bg-white
+              hover:bg-blue-700
+              leading-tight
+              text-center
+              z-10
+              inset-y-0
+              left-0
+              my-auto
+            "
+            >‹</label
+          >
+          <label
+            for="carousel-2"
+            class="
+              next
+              control-1
+              w-10
+              h-10
+              mr-2
+              md:mr-10
+              absolute
+              cursor-pointer
+              hidden
+              text-3xl
+              font-bold
+              text-black
+              hover:text-white
+              rounded-full
+              bg-white
+              hover:bg-blue-700
+              leading-tight
+              text-center
+              z-10
+              inset-y-0
+              right-0
+              my-auto
+            "
+            >›</label
+          >
+
+          <!--Slide 2-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-2"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item absolute opacity-0" style="height: 50vh">
+            <div
+              class="
+                block
+                h-full
+                w-full
+                bg-yellow-300
+                text-white text-5xl text-center
+              "
+            >
+              Slide 2
+            </div>
+          </div>
+          <label
+            for="carousel-1"
+            class="
+              prev
+              control-2
+              w-10
+              h-10
+              ml-2
+              md:ml-10
+              absolute
+              cursor-pointer
+              hidden
+              text-3xl
+              font-bold
+              text-black
+              hover:text-white
+              rounded-full
+              bg-white
+              hover:bg-blue-700
+              leading-tight
+              text-center
+              z-10
+              inset-y-0
+              left-0
+              my-auto
+            "
+            >‹</label
+          >
+          <label
+            for="carousel-3"
+            class="
+              next
+              control-2
+              w-10
+              h-10
+              mr-2
+              md:mr-10
+              absolute
+              cursor-pointer
+              hidden
+              text-3xl
+              font-bold
+              text-black
+              hover:text-white
+              rounded-full
+              bg-white
+              hover:bg-blue-700
+              leading-tight
+              text-center
+              z-10
+              inset-y-0
+              right-0
+              my-auto
+            "
+            >›</label
+          >
+
+          <!--Slide 3-->
+          <input
+            class="carousel-open"
+            type="radio"
+            id="carousel-3"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item absolute opacity-0" style="height: 50vh">
+            <div
+              class="
+                block
+                h-full
+                w-full
+                bg-yellow-300
+                text-white text-5xl text-center
+              "
+             
+            >
+           
+            </div>
+          </div>
+          <label
+            for="carousel-2"
+            class="
+              prev
+              control-3
+              w-10
+              h-10
+              ml-2
+              md:ml-10
+              absolute
+              cursor-pointer
+              hidden
+              text-3xl
+              font-bold
+              text-black
+              hover:text-white
+              rounded-full
+              bg-white
+              hover:bg-blue-700
+              leading-tight
+              text-center
+              z-10
+              inset-y-0
+              left-0
+              my-auto
+            "
+            >‹</label
+          >
+          <label
+            for="carousel-1"
+            class="
+              next
+              control-3
+              w-10
+              h-10
+              mr-2
+              md:mr-10
+              absolute
+              cursor-pointer
+              hidden
+              text-3xl
+              font-bold
+              text-black
+              hover:text-white
+              rounded-full
+              bg-white
+              hover:bg-blue-700
+              leading-tight
+              text-center
+              z-10
+              inset-y-0
+              right-0
+              my-auto
+            "
+            >›</label
+          >
+
+          <!-- Add additional indicators for each slide-->
+        
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-span-3 mt-5">
+  <div class="xl:col-span-3 lg:col-span-6 mt-5">
     <div
       class="
         max-w-2xl
@@ -106,12 +347,12 @@
         mx-auto
         bg-white
         rounded-lg
-        shadow-md
+        shadow-xl
         dark:bg-gray-800
       "
     >
       <div class="flex items-center justify-between">
-        <span class="text-xl text-gray-600 dark:text-gray-400">Wallet</span>
+        <span class="text-2xl text-gray-600 dark:text-gray-400">Wallet</span>
         <a
           class="
             px-3
@@ -143,7 +384,7 @@
         ></a>
       </div>
 
-      <div class="flex items-center justify-between mt-4">
+      <div class="flex items-center justify-between mb-7">
         <div class="text-center">
           <div
             class="
@@ -156,9 +397,9 @@
               text-gray-600
             "
           >
-            <h1 class="text-lg">Assets</h1>
+            <h3 class="text-2xl">Assets</h3>
           </div>
-          <h6 class="text-gray-900 text-lg font-bold leading-5">3</h6>
+          <h6 class="text-gray-900 text-2xl font-bold leading-5">3</h6>
         </div>
         <div class="text-center">
           <div
@@ -172,9 +413,9 @@
               text-gray-600
             "
           >
-            <h1 class="text-lg">Balance</h1>
+            <h3 class="text-2xl">Balance</h3>
           </div>
-          <h6 class="text-gray-900 text-lg font-bold leading-5">$1200</h6>
+          <h6 class="text-gray-900 text-2xl font-bold leading-5">$1200</h6>
         </div>
         <div class="text-center">
           <div
@@ -187,20 +428,23 @@
               mx-auto
               text-gray-600
             "
+          ></div>
+          <button
+            class="border border-yellow-200 text-black py-1 px-6 mt-5 mb-5"
           >
-            <h1 class="text-lg">Assets</h1>
-          </div>
-          <h6 class="text-gray-900 text-lg font-bold leading-5">3</h6>
+            SEND
+          </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-span-3 mt-4">
+  <div class="xl:col-span-3 lg:col-span-6 mt-4">
     <div
       class="
         max-w-2xl
         px-8
-        py-4
+        xl:py-4
+        lg:py-0
         mx-auto
         bg-white
         rounded-lg
@@ -209,7 +453,7 @@
       "
     >
       <div class="flex items-center justify-between">
-        <span class="text-xl text-gray-600 dark:text-gray-400"
+        <span class="text-2xl text-gray-600 dark:text-gray-400"
           >Transactions</span
         >
         <a
@@ -254,7 +498,7 @@
             overflow-hidden
             lg:my-10
             lg:px-10
-       
+            xl:my-4
             xl:px-4
             xl:w-1/3
           "
@@ -270,7 +514,7 @@
             overflow-hidden
             lg:my-10
             lg:px-10
-           
+            xl:my-4
             xl:px-4
             xl:w-1/3
           "

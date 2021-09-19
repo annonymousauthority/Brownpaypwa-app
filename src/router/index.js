@@ -11,6 +11,8 @@ import Signin from "../views/Signin.vue"
 import Register from "../views/Register.vue"
 import Dashboard from "../views/Dashboard.vue"
 import DashboardMain from "../components/DashboardMain.vue"
+import Transaction from "../components/Transactions.vue"
+import Wallet from "../components/Wallet.vue"
 
 const routes = [
   {
@@ -83,6 +85,16 @@ const routes = [
         path: "/dashboard/main",
         name: DashboardMain,
         component: DashboardMain
+      },
+      {
+        path: "/dashboard/transaction",
+        name: Transaction,
+        component: Transaction
+      },
+      {
+        path: "/dashboard/wallet",
+        name: Wallet,
+        component: Wallet
       }
     ]
   }

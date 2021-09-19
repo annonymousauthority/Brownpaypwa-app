@@ -172,7 +172,7 @@
         lg:py-20
       "
     >
-      <table>
+      <table class="crypto">
         <thead>
           <tr>
             <th

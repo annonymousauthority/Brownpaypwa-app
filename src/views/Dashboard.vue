@@ -2,21 +2,19 @@
   <DashboardNav />
   <div
     class="
-      mx-auto
-      sm:max-w-xl
       md:max-w-full
-      lg:container
-      lg:ml-36
+      md:ml-0
+      2xl:ml-52
       md:px-24
       lg:px-16
+      2xl:container
       lg:py-10
       text-white
     "
   >
-    <div class="">
+   
       <Sidebar />
-    </div>
-    <div class="grid grid-cols-6 gap-4 ml-96">
+    <div class="grid grid-cols-6 gap-4 ml-0 lg:ml-64 xl:ml-80">
     <router-view></router-view>
     </div>
   </div>

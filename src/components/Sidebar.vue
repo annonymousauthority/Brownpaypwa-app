@@ -21,61 +21,121 @@
             alt="Person"
           />
           <div class="flex flex-col justify-center">
-            <p class="text-md  text-gray-800">useradmin@brownpay.io</p>
-            
-         
+            <p class="text-md text-gray-800">useradmin@brownpay.io</p>
           </div>
-          
         </div>
-       <div class="flex flex-col items-center lg:ml-32">
+        <div class="flex flex-col items-center lg:ml-32">
           <div class="flex">
-              <p class=" text-md flex flex-col font-bold text-gray-800 mt-2 mr-4">Balance: $1,200</p>
-            <p class=" text-md flex-col  flex font-bold text-gray-800 mt-2">Balance: $1,200</p>
+            <p
+              class="
+                text-md
+                flex
+                text-left
+                flex-col
+                font-bold
+                text-gray-800
+                mt-2
+                mr-4
+              "
+            >
+              Balance: $1,200
+            </p>
           </div>
-       </div>
+        </div>
       </div>
 
-      <hr class="pt-4 mt-8"> 
+      <hr class="pt-4 mt-8" />
 
-      <div class="flex flex-col justify-between  flex-1  ">
+      <div class="flex flex-col justify-between flex-1 ml-0 xl:ml-8">
         <nav>
-         <router-link to="/dashboard/main" active-class="bg-yellow-400 text-white">
-           <p
-            class="
-              flex
-              items-center
-              px-4
-              py-2
-              text-gray-700
-             hover:bg-yellow-400
-              dark:hover:bg-gray-700
-              dark:hover:text-gray-200
-              hover:text-white
-              dark:bg-gray-700
-              dark:text-gray-200
-            "
-            href="#"
+          <router-link
+            to="/dashboard/main"
+            exact-active-class="current"
           >
-            <svg
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <a
+              class="
+                flex
+                items-center
+                px-4
+                py-2
+                text-gray-700
+                hover:bg-yellow-400
+                dark:hover:bg-gray-700
+                dark:hover:text-gray-200
+                hover:text-white
+                dark:bg-gray-700
+                dark:text-gray-200
+              "
+              href="#"
             >
-              <path
-                d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                />
+              </svg>
 
-            <span class="mx-4 text-center font-medium">Dashboard</span>
-          </p>
+              <span class="mx-4 text-center font-medium">Dashboard</span>
+            </a>
+          </router-link>
+          <router-link
+            to="/dashboard/transaction"
+           active-class="current"
+          >
+            <a
+              class="
+                flex
+                items-center
+                px-4
+                py-2
+                mt-5
+                text-gray-600
+                transition-colors
+                duration-200
+                transform
+                dark:text-gray-400
+                hover:bg-yellow-400
+                dark:hover:bg-gray-700
+                dark:hover:text-gray-200
+                hover:text-white
+              "
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
 
-         </router-link>
-          <a
+              <span class="mx-4 font-medium">Make Transactions</span>
+            </a>
+          </router-link>
+
+        <router-link to="/dashboard/wallet" active-class="current">
+            <a
             class="
               flex
               items-center
@@ -87,56 +147,12 @@
               duration-200
               transform
               dark:text-gray-400
-            hover:bg-yellow-400
+              hover:bg-yellow-400
               dark:hover:bg-gray-700
               dark:hover:text-gray-200
               hover:text-white
             "
-            href="#"
-          >
-            <svg
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <span class="mx-4 font-medium">Make Transactions</span>
-          </a>
-
-          <a
-            class="
-              flex
-              items-center
-              px-4
-              py-2
-              mt-5
-              text-gray-600
-              transition-colors
-              duration-200
-              transform
-              dark:text-gray-400
-               hover:bg-yellow-400
-              dark:hover:bg-gray-700
-              dark:hover:text-gray-200
-              hover:text-white
-            "
-            href="#"
+           
           >
             <svg
               class="w-5 h-5"
@@ -155,6 +171,7 @@
 
             <span class="mx-4 font-medium">Wallet</span>
           </a>
+        </router-link>
 
           <a
             class="
@@ -198,6 +215,43 @@
             </svg>
 
             <span class="mx-4 font-medium">Settings</span>
+          </a>
+          <a
+            class="
+              flex
+              items-center
+              px-4
+              py-2
+              mt-5
+              text-gray-600
+              transition-colors
+              duration-200
+              transform
+              dark:text-gray-400
+              hover:bg-yellow-400
+              dark:hover:bg-gray-700
+              dark:hover:text-gray-200
+              hover:text-white
+              
+            "
+            href="#"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+              />
+            </svg>
+
+            <span class="mx-4 font-medium">Logout</span>
           </a>
         </nav>
       </div>
