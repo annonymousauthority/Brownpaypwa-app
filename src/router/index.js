@@ -13,6 +13,11 @@ import Dashboard from "../views/Dashboard.vue"
 import DashboardMain from "../components/DashboardMain.vue"
 import Transaction from "../components/Transactions.vue"
 import Wallet from "../components/Wallet.vue"
+import History from "../components/History.vue"
+import Settings from "../components/Settings.vue"
+import Profile from '../components/Profile'
+import Addres from "../components/Addres"
+import  Security from "../components/Security"
 
 const routes = [
   {
@@ -95,7 +100,35 @@ const routes = [
         path: "/dashboard/wallet",
         name: Wallet,
         component: Wallet
-      }
+      },
+      {
+        path: "/dashboard/history",
+        name: History,
+        component: History
+      },
+      {
+        path: "/dashboard/settings",
+        name: Settings,
+        component: Settings,
+
+        children: [{
+          path: "/dashboard/settings",
+          name: Profile,
+          component: Profile
+        },
+           {
+             path: "/dashboard/settings/wallet_addresses",
+             name: Addres,
+             component: Addres
+           },
+           {
+             path: "/dashboard/settings/security",
+             name: Security,
+             component: Security
+           }
+        ]
+      },
+     
     ]
   }
 

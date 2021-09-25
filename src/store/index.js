@@ -229,72 +229,86 @@ export default createStore({
         "heading": "Brownpay is the best crypto website in the world"
 
       },
-       {
+      {
 
-         "id": 31,
-         "img": "https://images.unsplash.com/photo-1622630732303-8e94514a1746?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1294&q=80",
-         "title": "Expert opinions on Ethereum Trading",
-         "heading": "Brownpay is the best crypto website in the world"
+        "id": 31,
+        "img": "https://images.unsplash.com/photo-1622630732303-8e94514a1746?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1294&q=80",
+        "title": "Expert opinions on Ethereum Trading",
+        "heading": "Brownpay is the best crypto website in the world"
 
-       }, {
+      }, {
 
-         "id": 32,
-         "img": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
-         "title": "Expert opinions on Ethereum Trading",
-         "heading": "Brownpay is the best crypto website in the world"
+        "id": 32,
+        "img": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
+        "title": "Expert opinions on Ethereum Trading",
+        "heading": "Brownpay is the best crypto website in the world"
 
-       }, {
+      }, {
 
-         "id": 33,
-         "img": "https://images.unsplash.com/photo-1583752028088-91e3e9880b46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
-         "title": "Expert opinions on Ethereum Trading",
-         "heading": "Brownpay is the best crypto website in the world"
+        "id": 33,
+        "img": "https://images.unsplash.com/photo-1583752028088-91e3e9880b46?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80",
+        "title": "Expert opinions on Ethereum Trading",
+        "heading": "Brownpay is the best crypto website in the world"
 
-       }, {
+      }, {
 
-         "id": 34,
-         "img": "https://images.unsplash.com/photo-1627538993300-61f001db23e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80",
-         "title": "Expert opinions on Ethereum Trading",
-         "heading": "Brownpay is the best crypto website in the world"
+        "id": 34,
+        "img": "https://images.unsplash.com/photo-1627538993300-61f001db23e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80",
+        "title": "Expert opinions on Ethereum Trading",
+        "heading": "Brownpay is the best crypto website in the world"
 
-       }, {
+      }, {
 
-         "id": 35,
-         "img": "https://images.unsplash.com/photo-1628151015854-bc84256af7d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80",
-         "title": "Expert opinions on Ethereum Trading",
-         "heading": "Brownpay is the best crypto website in the world"
+        "id": 35,
+        "img": "https://images.unsplash.com/photo-1628151015854-bc84256af7d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80",
+        "title": "Expert opinions on Ethereum Trading",
+        "heading": "Brownpay is the best crypto website in the world"
 
-       }, {
+      }, {
 
-         "id": 36,
-         "img": "https://images.unsplash.com/flagged/photo-1554386690-8627e1041100?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1104&q=80",
-         "title": "Expert opinions on Ethereum Trading",
-         "heading": "Brownpay is the best crypto website in the world"
+        "id": 36,
+        "img": "https://images.unsplash.com/flagged/photo-1554386690-8627e1041100?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1104&q=80",
+        "title": "Expert opinions on Ethereum Trading",
+        "heading": "Brownpay is the best crypto website in the world"
 
-       },
+      },
     ],
-      sideBarOpen: state => {
-        return state.sideBarOpen
-      }
 
-    
+    users: [{
+      "name": "Logan Stone",
+      "img": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "username": "logan",
+      "password": 123456789,
+      "comfirmPassword": 123456789,
+      "Balance": "80,000",
+      "assets": 3,
+      "email": "legacyhouse@gmail.com",
+      "btc": 0.32,
+      "eth": 4.236,
+      "usdt": 1490.89,
+      "binance": 36.369
+    }]
 
-    
+
+
+
+
+
   },
-   getters: {
-     sideBarOpen: state => {
-       return state.sideBarOpen
-     }
-   },
+  getters: {
+    sideBarOpen: state => {
+      return state.sideBarOpen
+    }
+  },
   mutations: {
-      toggleSidebar(state) {
-        state.sideBarOpen = !state.sideBarOpen
-      }
+    toggleSidebar(state) {
+      state.sideBarOpen = !state.sideBarOpen
+    }
   },
   actions: {
-     toggleSidebar(context) {
-       context.commit('toggleSidebar')
-     }
+    toggleSidebar(context) {
+      context.commit('toggleSidebar')
+    }
   },
   modules: {},
 });

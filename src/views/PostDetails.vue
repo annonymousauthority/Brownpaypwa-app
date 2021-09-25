@@ -107,7 +107,6 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/footer.vue";
-// import axios from 'axios'
 import postData from "../store/store.json";
 export default {
      components: {

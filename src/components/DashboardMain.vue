@@ -1,10 +1,10 @@
 <template>
-  <div class="xl:col-span-2 lg:col-span-5">
-    <div class="shadow-xl">
-      <div class="flex flex-col items-center mt-6 -mx-2">
+  <div class="xl:col-span-2 lg:col-span-6"  v-for="person in user" :key="person.name">
+    <div class="shadow-xl bg-white h-96">
+      <div class="flex flex-col items-center mt-6 ">
         <img
-          class="object-cover w-44 h-44 mx-2 rounded-full"
-          src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+          class="object-cover w-44 h-44 mx-2 rounded-full mt-5"
+          :src="person.img"
           alt="avatar"
         />
 
@@ -35,8 +35,9 @@
             />
           </svg>
         </h4>
+        
         <div
-          class="flex flex-wrap overflow-hidden xl:-mx-4 mb-5"
+          class="flex flex-wrap overflow-hidden xl:-mx-4 mb-5 justify-between"
           v-for="money in prices"
           :key="money.btc"
         >
@@ -83,8 +84,8 @@
           </div>
         </div>
 
-        <button class="border border-yellow-200 text-black py-1 px-6 mt-5 mb-5">
-          SEND
+        <button class="border border-yellow-200 text-black py-1 px-6  mb-0 lg:mb-3 xl:mb-3">
+          Send
         </button>
       </div>
     </div>
@@ -270,10 +271,7 @@
                 bg-yellow-300
                 text-white text-5xl text-center
               "
-             
-            >
-           
-            </div>
+            ></div>
           </div>
           <label
             for="carousel-2"
@@ -333,7 +331,6 @@
           >
 
           <!-- Add additional indicators for each slide-->
-        
         </div>
       </div>
     </div>
@@ -360,9 +357,6 @@
             text-sm
             font-bold
             text-black
-            transition-colors
-            duration-200
-            transform
             bg-white
             shadow-xl
             rounded
@@ -384,7 +378,7 @@
         ></a>
       </div>
 
-      <div class="flex items-center justify-between mb-7">
+      <div class="flex items-center justify-between mb-5">
         <div class="text-center">
           <div
             class="
@@ -432,7 +426,7 @@
           <button
             class="border border-yellow-200 text-black py-1 px-6 mt-5 mb-5"
           >
-            SEND
+            Send
           </button>
         </div>
       </div>
@@ -441,8 +435,8 @@
   <div class="xl:col-span-3 lg:col-span-6 mt-4">
     <div
       class="
-        max-w-2xl
         px-8
+        h-56
         xl:py-4
         lg:py-0
         mx-auto
@@ -487,55 +481,55 @@
         ></a>
       </div>
 
-      <div
-        class="flex flex-wrap overflow-hidden lg:-mx-10 xl:-mx-4 text-left"
-        v-for="info in card"
-        :key="info.price"
-      >
+      <div class="flex flex-wrap overflow-hidden lg:-mx-3 xl:-mx-3"    v-for="info in card"
+        :key="info.price">
         <div
           class="
-            w-1/2
+            w-full
             overflow-hidden
-            lg:my-10
-            lg:px-10
-            xl:my-4
-            xl:px-4
+            lg:my-3
+            lg:px-3
+            lg:w-1/3
+            xl:my-3
+            xl:px-3
             xl:w-1/3
           "
-        >
-          <span :class="[info.sent ? 'text-red-400' : 'text-green-400']">{{
+        >  <span :class="[info.sent ? 'text-red-400' : 'text-green-400']">{{
             info.price
           }}</span>
         </div>
 
         <div
           class="
-            w-1/2
+            w-full
             overflow-hidden
-            lg:my-10
-            lg:px-10
-            xl:my-4
-            xl:px-4
+            lg:my-3
+            lg:px-3
+            lg:w-1/3
+            xl:my-3
+            xl:px-3
             xl:w-1/3
           "
         >
-          <span class="text-gray-600">{{ info.text }}</span>
+        <span class="text-gray-600">{{ info.text }}</span>
         </div>
 
         <div
           class="
-            w-1/2
+            w-full
             overflow-hidden
-            lg:my-10
-            lg:px-10
-            xl:my-4
-            xl:px-4
+            lg:my-3
+            lg:px-3
+            lg:w-1/3
+            xl:my-3
+            xl:px-3
             xl:w-1/3
           "
         >
-          <span class="text-gray-600">{{ info.name }}</span>
+       <span class="text-gray-600">{{ info.name }}</span>
         </div>
       </div>
+
     </div>
   </div>
   <div class="col-span-6 ml-6">
@@ -543,6 +537,7 @@
       class="
         flex flex-wrap
         overflow-hidden
+        bg-white
         lg:-mx-12
         border border-gray-200
         xl:-mx-6
@@ -635,6 +630,12 @@ export default {
       ],
     };
   },
+   computed: {
+    user() {
+      return this.$store.state.users;
+    },
+   }
+
 };
 </script>
 <style lang="">

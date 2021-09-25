@@ -132,12 +132,14 @@
     </div>
   </div>
 
-  <div class="col-span-2 ml-0 xl:ml-16">
-    <div class="shadow-xl">
-      <h3 class="text-2xl text-gray-600 mt-0 xl:mt-32">Balance</h3>
+  <div
+    class="col-span-3 lg:col-span-6 xl:col-span-3 2xl:col-span-3 ml-0 xl:ml-16"
+  >
+    <div class="shadow-xl bg-white h-72">
+      <h3 class="text-2xl text-gray-600 mt-0 xl:mt-16 pt-20">Balance</h3>
       <h1 class="price text-4xl text-yellow-400">$15,000</h1>
       <span class="text-gray-600">USD</span>
-      <h3 class="font-bold text-gray-600 mt-6 shadow-xl">
+      <h3 class="font-bold text-gray-600 mt-6">
         Wallet ID: <span class="text-gray-600">2354HDHAKNKB</span>
       </h3>
     </div>
@@ -156,7 +158,9 @@
     "
   >
     <div class="flex flex-col">
-      <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 shadow-xl h-80">
+      <div
+        class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 bg-white shadow-xl h-80"
+      >
         <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
           <div class="overflow-hidden sm:rounded-lg">
             <h3
@@ -271,39 +275,16 @@
       </div>
     </div>
   </div>
-
-  <!-- <div class="col-span-2">
-    <h2
-      class="
-        max-w-full
-      
-        font-sans
-        text-3xl
-        font-bold
-        leading-none
-        tracking-tight
-        text-black
-        sm:text-4xl
-        text-center
-        md:mx-auto
-  
-      "
-    >
-     
-      quick, brown fox jumps over a lazy dog
-    </h2>
-  </div> -->
-  <div class="col-span-2 ml-0 xl:ml-16 ">
-    <div class="shadow-2xl h-64 2xl:h-64 w-full">
-      <h3 class="text-3xl text-gray-800 pt-18 ">Coming Soon</h3>
-      <img src="../assets/Virtual-cards.jpg" class="w-96 h-96" alt="">
+  <div class="col-span-3 lg:col-span-6 xl:col-span-3 ml-0 xl:ml-16 mt-6">
+    <div class="shadow-2xl bg-white h-64 2xl:h-64 w-full">
+      <h3 class="text-3xl text-gray-800 pt-6">Coming Soon</h3>
+      <img src="../assets/stack-crypto.jpg" class="w-full h-full mb-8" alt="" />
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "Transaction",
-
   data() {
     return {
       history: [
