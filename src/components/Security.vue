@@ -1,5 +1,5 @@
 <template >
-  <div class="col-span-6 shadow-2xl h-screen-full">
+  <div class="col-span-6  h-screen-full">
     <!-- <div class="flex justify-between shadow-xl">
       <div class="justify-start mt-16">
         <span class="text-black px-4 text-base">

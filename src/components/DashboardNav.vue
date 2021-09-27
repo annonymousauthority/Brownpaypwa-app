@@ -1,6 +1,6 @@
 <template>
-  <div class=" w-full">
-    <nav class="bg-yellow-400 shadow  w-full ">
+  <div class="">
+    <nav class="bg-yellow-400 shadow  w-full">
       <div class="container px-6 py-4 mx-auto">
         <div class="md:flex md:items-center md:justify-between">
           <div class="flex items-center justify-between">
@@ -76,18 +76,6 @@
                   />
                 </div>
 
-                <h3
-                  class="
-                    mx-2
-                    text-sm
-                    font-medium
-                    text-gray-700
-                    dark:text-gray-200
-                    md:hidden
-                  "
-                >
-                  Khatab wedaa
-                </h3>
               </button>
             </div>
           </div>

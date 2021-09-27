@@ -15,7 +15,7 @@
       "
     >
       <Sidebar />
-      <div class="grid grid-cols-6 gap-4 ml-0 lg:ml-64 xl:ml-80 ">
+      <div class="grid grid-cols-6 gap-4 ml-0 lg:ml-64 xl:ml-80  ">
         <router-view></router-view>
       </div>
     </div>

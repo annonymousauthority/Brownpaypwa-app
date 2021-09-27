@@ -1,7 +1,7 @@
 <template>
   <div class="col-span-6">
     <div class="main-content">
-      <div class="2xl:w-screen-full">
+      <div class="container">
         <div class="col-span-6 order-xl-1">
           <div class="card bg-secondary shadow">
             <div class="card-header bg-secondary border-0">
@@ -22,16 +22,7 @@
                     alt="avatar"
                   /><br />
                   <button
-                    class="
-                      border 
-                      btn
-                      text-black
-                      py-1
-                      px-6
-                      mb-0
-                      lg:mb-3
-                      xl:mb-3
-                    "
+                    class="border btn text-black py-1 px-6 mb-0 lg:mb-3 xl:mb-3"
                   >
                     Upload Photo
                   </button>
@@ -47,17 +38,16 @@
                       xl:mb-3
                     "
                   >
-                   Remove
+                    Remove
                   </button>
                 </div>
-                
               </div>
             </div>
-            <div class="card-body ">
+            <div class="card-body">
               <form>
                 <h6 class="heading-small text-muted mb-4">User information</h6>
                 <div class="pl-lg-4">
-                      <div class="row">
+                  <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="input-first-name"
@@ -80,9 +70,11 @@
                         <input
                           type="text"
                           id="input-last-name"
-                          class="form-control form-control-alternative"
+                          class="
+                            form-control form-control-alternative
+                            text-black
+                          "
                           placeholder="Last name"
-                          value="Jesse"
                         />
                       </div>
                     </div>
@@ -116,7 +108,6 @@
                       </div>
                     </div>
                   </div>
-              
                 </div>
                 <hr class="my-4" />
                 <!-- Address -->
@@ -186,21 +177,21 @@
                 </div>
               </form>
 
-               <button
-                    class="
-                      border 
-                      btn
-                      text-black
-                      mx-4
-                      py-1
-                      px-6
-                      mb-0
-                      lg:mb-3
-                      xl:mb-3
-                    "
-                  >
-                   Save
-                  </button>
+              <button
+                class="
+                  border
+                  btn
+                  text-black
+                  mx-4
+                  py-1
+                  px-6
+                  mb-0
+                  lg:mb-3
+                  xl:mb-3
+                "
+              >
+                Save
+              </button>
             </div>
           </div>
         </div>

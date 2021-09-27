@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="appTheme">
     <landingpage/>
   </div>
 </template>

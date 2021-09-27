@@ -588,6 +588,7 @@ Partnership & collaboration Css style */
     position: fixed;
     z-index: 0;
     width: 19%;
+  
     top: 125px;
     left: 210px;
     background: #eee;
@@ -595,6 +596,7 @@ Partnership & collaboration Css style */
     padding: 8px 0;
 }
 
+.sidebar{height: 100%;}
 .present a{
     color: #fbbf24;
 }
@@ -611,6 +613,7 @@ Partnership & collaboration Css style */
     .sidepanel {
         left: 30px;
         width: 27%;
+          height: 50%;
 
     }
 }
@@ -869,7 +872,7 @@ Partnership & collaboration Css style */
 
 .form-control::placeholder {
     opacity: 1;
-    color: #adb5bd;
+    color: black;
 }
 
 .form-control:disabled,
@@ -978,7 +981,7 @@ Partnership & collaboration Css style */
     padding: .625rem .75rem;
     text-align: center;
     white-space: nowrap;
-    color: #adb5bd;
+    color: black;
     border: 1px solid #cad1d7;
     border-radius: .375rem;
     background-color: #fff;
@@ -1013,7 +1016,7 @@ Partnership & collaboration Css style */
     word-wrap: break-word;
     border: 1px solid rgba(0, 0, 0, .05);
     border-radius: .375rem;
-    background-color: #fff;
+    background-color:white;
     background-clip: border-box;
 }
 
@@ -1031,7 +1034,7 @@ Partnership & collaboration Css style */
     margin-bottom: 0;
     padding: 1.25rem 1.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
-    background-color: #fff;
+    background-color:white;
 }
 
 .card-header:first-child {
@@ -1192,9 +1195,6 @@ Partnership & collaboration Css style */
 
 
 
-.text-muted {
-    color: #8898aa !important;
-}
 
 
 .bg-white {
@@ -1244,7 +1244,7 @@ Partnership & collaboration Css style */
 .form-control-label {
     font-size: .875rem;
     font-weight: 600;
-    color: #525f7f;
+    color: black;
 }
 
 .form-control {
@@ -1252,15 +1252,15 @@ Partnership & collaboration Css style */
 }
 
 .form-control:focus:-ms-input-placeholder {
-    color: #adb5bd;
+    color: white;
 }
 
 .form-control:focus::-ms-input-placeholder {
-    color: #adb5bd;
+    color: white;
 }
 
 .form-control:focus::placeholder {
-    color: #adb5bd;
+    color: white;
 }
 
 
@@ -1323,9 +1323,9 @@ Partnership & collaboration Css style */
 }
 
 .focused .input-group-text {
-    color: #8898aa;
+    color: black;
     border-color: rgba(50, 151, 211, .25);
-    background-color: #fff;
+    background-color: #ffff;
 }
 
 .focused .form-control {
@@ -1385,7 +1385,7 @@ Partnership & collaboration Css style */
 }
 
 .focused .input-group-text {
-    color: #8898aa;
+    color:black;
     border-color: rgba(50, 151, 211, .25);
     background-color: #fff;
 }
@@ -1403,3 +1403,27 @@ Partnership & collaboration Css style */
     transition: all .15s ease;
 }
 
+.logos{
+     -webkit-animation:spin 10s linear infinite;
+     -moz-animation:spin 10s linear infinite;
+     animation:spin 10s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

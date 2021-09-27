@@ -4,7 +4,7 @@
       <div
         class="
           w-full
-          h-screen
+         
           overflow-hidden
           lg:my-3
           lg:px-3
@@ -396,7 +396,7 @@
             <button
               class="border border-yellow-200 text-black py-1 px-6 mt-2"
             >
-              Send
+            Buy
             </button>
           </div>
         </form>

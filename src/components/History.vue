@@ -184,12 +184,12 @@
                   >
                     <button
                       class="
-                        border
+                      
                         flex
                         justify-start
                         ml-0
                         xl:ml-4
-                        border-yellow-200
+                       
                         text-black
                         py-1
                         px-6
