@@ -157,11 +157,11 @@
       xl:ml-6
     "
   >
-    <div class="flex flex-col px-8">
+    <div class="flex flex-col">
       <div
-        class="-my-2  sm:-mx-6 lg:-mx-8 bg-white shadow-xl h-80"
+        class="-my-2  sm:-mx-6 lg:-mx-8 bg-white shadow-xl h-80 px-2"
       >
-        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-4">
           <div class="overflow-hidden sm:rounded-lg">
             <h3
               class="
