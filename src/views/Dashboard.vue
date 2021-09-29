@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard dark:bg-dark">
     <DashboardNav />
-    <div class="container px-6 py-4 mx-auto ">
+    <div class="container px-6 py-4 mx-auto">
       <div class="flex flex-wrap overflow-hidden lg:-mx-4 xl:-mx-6">
         <div
           class="
@@ -15,7 +15,7 @@
             xl:w-3/12
           "
         >
-        <Sidebar/>
+          <Sidebar />
         </div>
 
         <div
@@ -23,16 +23,16 @@
             w-full
             overflow-hidden
             lg:my-4
-            lg:px-4
-            lg:w-1/2
+            lg:px-16
+            
             xl:my-6
             xl:px-6
             xl:w-9/12
           "
         >
           <div class="grid grid-cols-6 gap-4">
-        <router-view></router-view>
-      </div>
+            <router-view></router-view>
+          </div>
         </div>
       </div>
     </div>

@@ -746,7 +746,7 @@ Partnership & collaboration Css style */
 .col-xl-4,
 .col-xl-6,
 .col-xl-8 {
-    position: relative;
+  
     width: 100%;
     min-height: 1px;
     padding-right: 15px;

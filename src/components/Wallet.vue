@@ -1,10 +1,21 @@
 <template >
-  <div class="col-span-3 2xl:col-span-3 xl:col-span-3 lg:col-span-6">
+  <div
+    class="
+      col-span-3
+      2xl:col-span-3
+      xl:col-span-3
+      lg:col-span-3
+      sm:col-span-3
+      md:col-span-6
+      px-0
+      lg:px-0
+      md:px-28
+    "
+  >
     <div class="flex flex-wrap overflow-hidden bg-white">
       <div
         class="
           w-full
-         
           overflow-hidden
           lg:my-3
           lg:px-3
@@ -22,7 +33,7 @@
           <h4 class="text-2xl text-gray-800 text-center">Total Balance</h4>
           <span class="text-4xl text-gray-600 text-center"> $80,000 </span>
           <div class="mt-8">
-            <div class="grid  lg:grid-cols-3">
+            <div class="grid lg:grid-cols-3 md:grid-cols-3">
               <div class="sm:mx-auto sm:text-center">
                 <div
                   class="
@@ -144,7 +155,7 @@
             justify-between
             shadow-2xl
             px-8
-            mb-8     
+            mb-8
           "
           v-for="money in wallet"
           :key="money"
@@ -157,7 +168,7 @@
             />
             <a
               href="#"
-              class=" font-semibold text-gray-700 dark:text-gray-200 mx-4"
+              class="font-semibold text-gray-700 dark:text-gray-200 mx-4"
               >{{ money.name }}</a
             >
           </div>
@@ -168,15 +179,26 @@
   </div>
 
   <!----Second Panel-->
-  <div class="col-span-3 2xl:col-span-3 xl:col-span-3 lg:col-span-6">
+  <div
+    class="
+      col-span-3
+      2xl:col-span-3
+      xl:col-span-3
+      lg:col-span-3
+      sm:col-span-3
+      md:col-span-6
+      px-0
+      lg:px-0
+      md:px-28
+    "
+  >
     <div class="bg-white rounded shadow-2xl p-7 sm:p-10 text-left">
       <h3
         class="
           mb-4
           xl:text-2xl
           font-bold
-          text-xl
-          text-left
+          text-xl text-left
           sm:mb-6
           sm:text-2xl
           text-black
@@ -289,9 +311,7 @@
         </div>
 
         <div class="mt-4 mb-2 sm:mb-4 flex justify-center text-md">
-          <button
-            class="border border-yellow-200 text-black py-1 px-6 mt-5"
-          >
+          <button class="border border-yellow-200 text-black py-1 px-6 mt-5">
             Convert Currency
           </button>
         </div>
@@ -311,7 +331,7 @@
             text-black
           "
         >
-         Buy Currency
+          Buy Currency
         </h3>
         <form>
           <div class="mb-1 sm:mb-2">
@@ -390,13 +410,9 @@
             />
           </div>
 
-          
-
           <div class="mt-4 mb-2 sm:mb-4 flex justify-center text-md">
-            <button
-              class="border border-yellow-200 text-black py-1 px-6 mt-2"
-            >
-            Buy
+            <button class="border border-yellow-200 text-black py-1 px-6 mt-2">
+              Buy
             </button>
           </div>
         </form>
@@ -408,7 +424,7 @@
 export default {
   data() {
     //images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60"
-    https: return {
+    return {
       wallet: [
         {
           name: "BITCOIN",

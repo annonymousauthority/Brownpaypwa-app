@@ -1,17 +1,18 @@
 <template>
-  <div class="sidepanel">
+  <div class="sidepanel sm:hidden xl:contents">
     <div
       class="
         sidebar
+        lg:fixed
         mx-auto
-        w-96
+        w-80
         py-8
         bg-white
         text-center
         border
         dark:bg-gray-900
         dark:border-gray-600
-        fixed
+        
       "
     >
       <div class="flex flex-col items-center mt-6 lg:-ml-8">
@@ -254,8 +255,8 @@
               items-center
               self-end
               px-4
+              mt-5
               py-2
-              mt-14
               text-gray-600
               transition-colors
               duration-200

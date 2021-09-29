@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:col-span-6 xl:col-span-3 2xl:col-span3 shadow-lg">
+  <div class="lg:col-span-3  sm:col-span-3 md:col-span-6 xl:col-span-3 2xl:col-span3  px-0 lg:px-0 md:px-28">
     <div class="bg-white rounded shadow-2xl p-7 sm:p-10 text-left">
       <h3
         class="
@@ -17,7 +17,7 @@
       </h3>
       <form>
         <div class="mb-1 sm:mb-2">
-          <div class="relative inline-block w-full text-gray-700">
+          <div class=" inline-block w-full text-gray-700">
             <select
               class="
                 w-full
@@ -133,7 +133,7 @@
   </div>
 
   <div
-    class="col-span-3 lg:col-span-6 xl:col-span-3 2xl:col-span-3 ml-0 xl:ml-16"
+    class="col-span-3 lg:col-span-3  sm:col-span-3 md:col-span-3 xl:col-span-3 2xl:col-span-3 ml-0 xl:ml-16"
   >
     <div class="shadow-xl bg-white h-72">
       <h3 class="text-2xl text-gray-600 mt-0 xl:mt-16 pt-20">Balance</h3>
@@ -157,7 +157,7 @@
       xl:ml-6
     "
   >
-    <div class="flex flex-col">
+    <div class="flex flex-col ">
       <div
         class="-my-2  sm:-mx-6 lg:-mx-8 bg-white shadow-xl h-80 px-2"
       >
@@ -275,7 +275,7 @@
       </div>
     </div>
   </div>
-  <div class="col-span-3 lg:col-span-6 xl:col-span-3 ml-0 xl:ml-16 mt-6">
+  <div class="col-span-3 lg:col-span-3  sm:col-span-3 md:col-span-4 xl:col-span-3 ml-0 xl:ml-16 mt-6">
     <div class="shadow-2xl bg-white h-64 2xl:h-64 w-full">
       <h3 class="text-3xl text-gray-800 pt-6">Coming Soon</h3>
       <img src="../assets/stack-crypto.jpg" class="w-full h-full mb-8" alt="" />

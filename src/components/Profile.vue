@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-6">
+  <div class="col-span-6 ">
     <div class="main-content">
       <div class="container">
         <div class="col-span-6 order-xl-1">

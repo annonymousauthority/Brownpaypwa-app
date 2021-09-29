@@ -1,7 +1,11 @@
 <template>
-  <div class="xl:col-span-2 lg:col-span-6"  v-for="person in user" :key="person.name">
+  <div
+    class="xl:col-span-2 lg:col-span-3 sm:col-span-3 md:col-span-6"
+    v-for="person in user"
+    :key="person.name"
+  >
     <div class="shadow-xl bg-white h-96">
-      <div class="flex flex-col items-center mt-6 ">
+      <div class="flex flex-col items-center mt-6">
         <img
           class="object-cover w-44 h-44 mx-2 rounded-full mt-5"
           :src="person.img"
@@ -35,20 +39,27 @@
             />
           </svg>
         </h4>
-        
+
         <div
-          class="flex flex-wrap overflow-hidden xl:-mx-4 mb-5 justify-between"
+          class="
+            flex flex-wrap
+            overflow-hidden
+            lg:-mx-4
+            xl:-mx-1
+            justify-between
+          "
           v-for="money in prices"
           :key="money.btc"
         >
           <div
             class="
-              w-2/5
+              w-full
               overflow-hidden
-              lg:my-10
-              lg:px-10
-              xl:my-4
-              xl:px-4
+              lg:my-4
+              lg:px-4
+              lg:w-1/2
+              xl:my-1
+              xl:px-1
               xl:w-1/3
             "
           >
@@ -57,12 +68,13 @@
 
           <div
             class="
-              w-2/5
+              w-full
               overflow-hidden
-              lg:my-10
-              lg:px-10
-              xl:my-4
-              xl:px-4
+              lg:my-4
+              lg:px-4
+              lg:w-1/2
+              xl:my-1
+              xl:px-1
               xl:w-1/3
             "
           >
@@ -71,12 +83,13 @@
 
           <div
             class="
-              w-1/2
+              w-full
               overflow-hidden
-              lg:my-10
-              lg:px-10
-              xl:my-4
-              xl:px-4
+              lg:my-4
+              lg:px-4
+              lg:w-1/2
+              xl:my-1
+              xl:px-1
               xl:w-1/3
             "
           >
@@ -84,14 +97,24 @@
           </div>
         </div>
 
-        <button class="border border-yellow-200 text-black py-1 px-6  mb-0 lg:mb-3 xl:mb-3">
+        <button
+          class="
+            border border-yellow-200
+            text-black
+            py-1
+            px-6
+            mb-0
+            lg:mb-5
+            xl:mb-3
+          "
+        >
           Send
         </button>
       </div>
     </div>
   </div>
 
-  <div class="xl:col-span-4 lg:col-span-6">
+  <div class="xl:col-span-4 lg:col-span-3 sm:col-span-3 md:col-span-6">
     <div class="shadow-xl">
       <div class="flex flex-col items-center mt-6 -mx-2">
         <div class="carousel-inner relative overflow-hidden w-full h-96">
@@ -110,7 +133,7 @@
                 block
                 h-full
                 w-full
-                bg-yellow-300
+                bg-yellow-400
                 text-white text-5xl text-center
               "
             >
@@ -189,7 +212,7 @@
                 block
                 h-full
                 w-full
-                bg-yellow-300
+                bg-yellow-400
                 text-white text-5xl text-center
               "
             >
@@ -268,7 +291,7 @@
                 block
                 h-full
                 w-full
-                bg-yellow-300
+                bg-yellow-400
                 text-white text-5xl text-center
               "
             ></div>
@@ -335,18 +358,9 @@
       </div>
     </div>
   </div>
-  <div class="xl:col-span-3 lg:col-span-6 mt-5">
+  <div class="xl:col-span-3 sm:col-span-3 md:col-span-6 lg:col-span-3 mt-5">
     <div
-      class="
-        max-w-2xl
-        px-8
-        py-4
-        mx-auto
-        bg-white
-        rounded-lg
-        shadow-xl
-        dark:bg-gray-800
-      "
+      class="px-8 py-4 mx-auto bg-white rounded-lg shadow-xl dark:bg-gray-800"
     >
       <div class="flex items-center justify-between">
         <span class="text-2xl text-gray-600 dark:text-gray-400">Wallet</span>
@@ -432,7 +446,7 @@
       </div>
     </div>
   </div>
-  <div class="xl:col-span-3 lg:col-span-6 mt-4">
+  <div class="xl:col-span-3 lg:col-span-3 sm:col-span-3 md:col-span-6 mt-4">
     <div
       class="
         px-8
@@ -459,7 +473,6 @@
             text-black
             transition-colors
             duration-200
-            transform
             bg-white
             shadow-xl
             rounded
@@ -481,8 +494,11 @@
         ></a>
       </div>
 
-      <div class="flex flex-wrap overflow-hidden lg:-mx-3 xl:-mx-3"    v-for="info in card"
-        :key="info.price">
+      <div
+        class="flex flex-wrap overflow-hidden lg:-mx-3 xl:-mx-3"
+        v-for="info in card"
+        :key="info.price"
+      >
         <div
           class="
             w-full
@@ -494,7 +510,8 @@
             xl:px-3
             xl:w-1/3
           "
-        >  <span :class="[info.sent ? 'text-red-400' : 'text-green-400']">{{
+        >
+          <span :class="[info.sent ? 'text-red-400' : 'text-green-400']">{{
             info.price
           }}</span>
         </div>
@@ -511,7 +528,7 @@
             xl:w-1/3
           "
         >
-        <span class="text-gray-600">{{ info.text }}</span>
+          <span class="text-gray-600">{{ info.text }}</span>
         </div>
 
         <div
@@ -526,10 +543,9 @@
             xl:w-1/3
           "
         >
-       <span class="text-gray-600">{{ info.name }}</span>
+          <span class="text-gray-600">{{ info.name }}</span>
         </div>
       </div>
-
     </div>
   </div>
   <div class="col-span-6 ml-6">
@@ -605,37 +621,36 @@ export default {
         {
           btc: "0.000387",
           eth: "0.002545",
-          dollar: "2300",
-        },
+          dollar: "2300"
+        }
       ],
       card: [
         {
           price: "$250",
           text: "Received from",
           name: "Emilia",
-          sent: false,
+          sent: false
         },
         {
           price: "$200",
           text: "sent to",
           name: "Deborah",
-          sent: true,
+          sent: true
         },
         {
           price: "$250",
           text: "Received from",
           name: "Emily",
-          sent: false,
-        },
-      ],
+          sent: false
+        }
+      ]
     };
   },
-   computed: {
+  computed: {
     user() {
       return this.$store.state.users;
-    },
-   }
-
+    }
+  }
 };
 </script>
 <style lang="">
