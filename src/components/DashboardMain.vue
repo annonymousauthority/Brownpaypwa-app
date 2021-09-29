@@ -41,13 +41,7 @@
         </h4>
 
         <div
-          class="
-            flex flex-wrap
-            overflow-hidden
-            lg:-mx-4
-            xl:-mx-1
-            justify-between
-          "
+          class="flex flex-wrap overflow-hidden lg:-mx-4 xl:-mx-1 md:mt-5"
           v-for="money in prices"
           :key="money.btc"
         >
@@ -57,10 +51,12 @@
               overflow-hidden
               lg:my-4
               lg:px-4
-              lg:w-1/2
+              lg:w-1/3
               xl:my-1
               xl:px-1
               xl:w-1/3
+              md:px-4
+              md:w-1/3
             "
           >
             <span class="text-sm text-gray-800">{{ money.btc }} BTC</span>
@@ -72,10 +68,12 @@
               overflow-hidden
               lg:my-4
               lg:px-4
-              lg:w-1/2
+              lg:w-1/3
               xl:my-1
               xl:px-1
               xl:w-1/3
+              md:px-4
+              md:w-1/3
             "
           >
             <span class="text-sm text-gray-800">{{ money.eth }} ETH</span>
@@ -87,10 +85,12 @@
               overflow-hidden
               lg:my-4
               lg:px-4
-              lg:w-1/2
+              lg:w-1/3
               xl:my-1
               xl:px-1
               xl:w-1/3
+              md:px-4
+              md:w-1/3
             "
           >
             <span class="text-gray-800 text-sm">${{ money.dollar }}</span>
@@ -100,6 +100,9 @@
         <button
           class="
             border border-yellow-200
+            lg:mt-0
+            xl:mt-0
+            md:mt-5
             text-black
             py-1
             px-6
@@ -509,6 +512,9 @@
             xl:my-3
             xl:px-3
             xl:w-1/3
+            md:px-4
+            md:w-1/3
+            md:my-4
           "
         >
           <span :class="[info.sent ? 'text-red-400' : 'text-green-400']">{{
@@ -526,6 +532,9 @@
             xl:my-3
             xl:px-3
             xl:w-1/3
+            md:px-4
+            md:w-1/3
+              md:my-4
           "
         >
           <span class="text-gray-600">{{ info.text }}</span>
@@ -541,6 +550,9 @@
             xl:my-3
             xl:px-3
             xl:w-1/3
+            md:px-4
+            md:w-1/3
+              md:my-4
           "
         >
           <span class="text-gray-600">{{ info.name }}</span>

@@ -1,6 +1,6 @@
 <template>
-  <div class="dashboard dark:bg-dark">
-    <DashboardNav />
+  <div class="dashboard">
+    <DashboardNav/>
     <div class="container px-6 py-4 mx-auto">
       <div class="flex flex-wrap overflow-hidden lg:-mx-4 xl:-mx-6">
         <div
@@ -24,7 +24,6 @@
             overflow-hidden
             lg:my-4
             lg:px-16
-            
             xl:my-6
             xl:px-6
             xl:w-9/12
@@ -47,6 +46,17 @@ import Sidebar from "../components/Sidebar.vue";
 import DashboardNav from "../components/DashboardNav.vue";
 export default {
   components: { Sidebar, DashboardNav },
+  // data() {
+  //   return {
+  //     theme: "theme-light"
+  //   };
+  // },
+
+  // methods: {
+  //   toggleTheme() {
+  //     this.theme = this.theme === "theme-light" ? "theme-dark" : "theme-dark";
+  //   }
+  // }
 };
 </script>
 

@@ -79,7 +79,7 @@
     </div> -->
 
     <div class="grid gap-4 col-gap-4 lg:grid-cols-2 mt-8 justify-items-end shadow-2xl px-4 mb-14">
-      <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0  ">
+      <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0 ">
         <div class="sm:mr-5">
           <div
             class="
@@ -554,7 +554,7 @@
       </div>
 
       <!---Third row card-->
-      <div class="grid gap-4 col-gap-4 lg:grid-cols-2 mt-8 justify-items-end shadow-2xl px-4 py-4 mb-14">
+      <div class="grid gap-4 col-gap-4 lg:grid-cols-2 mt-8 justify-items-end shadow-2xl px-4 py-4">
       <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0 mt-4">
         <div class="sm:mr-5">
           <div

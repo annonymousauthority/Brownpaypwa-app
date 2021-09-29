@@ -40,6 +40,7 @@
           >
             <div class="flex items-center justify-end mt-4 md:mt-0">
               <button
+             
                 class="
                   hidden
                   mx-4
@@ -69,6 +70,7 @@
                   />
                 </svg>
               </button>
+             
 
               <button
                 type="button"
@@ -420,17 +422,23 @@
   </div>
 </template>
 <script>
+
 export default {
   name: "DashboardNav",
+
   data() {
     return {
       isOpen: false,
+      // theme: ""
     };
-  },
+  }, 
   methods: {
     drawer() {
       this.isOpen = !this.isOpen;
     },
+    // updateTheme(theme) {
+    //   this.theme = theme;
+    // }
   },
   watch: {
     isOpen: {
@@ -440,13 +448,16 @@ export default {
           if (isOpen) document.body.style.setProperty("overflow", "hidden");
           else document.body.style.removeProperty("overflow");
         }
-      },
-    },
+      }
+    }
   },
   mounted() {
     document.addEventListener("keydown", (e) => {
       if (e.keyCode == 27 && this.isOpen) this.isOpen = false;
     });
+    
   },
+
+   
 };
 </script>
