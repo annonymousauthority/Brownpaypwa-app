@@ -74,12 +74,12 @@
     padding: 0 auto;
 }
 
-.current a{
+.current a {
     text-decoration: underline;
     background-color: #fbbf24;
     color: white;
     text-decoration: none !important;
-    
+
 }
 
 /* 
@@ -583,12 +583,11 @@ Partnership & collaboration Css style */
     background-color:#EEEEEE;
     height: 100%;
 } */
-
+/* 
 .sidepanel {
     position: fixed;
     z-index: 0;
     width: 19%;
-  
     top: 125px;
     left: 210px;
     background: #eee;
@@ -596,9 +595,20 @@ Partnership & collaboration Css style */
     padding: 8px 0;
 }
 
-.sidebar{height: 100%;}
-.present a{
+.sidebar {
+    height: 100%;
+}
+
+.present a {
     color: #fbbf24;
+}
+
+@media only screen and (min-device-width: 2304px) {
+    .sidepanel {
+        left: 35px;
+        width: 15%;
+
+    }
 }
 
 @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) {
@@ -613,10 +623,10 @@ Partnership & collaboration Css style */
     .sidepanel {
         left: 30px;
         width: 27%;
-          height: 50%;
+        height: 50%;
 
     }
-}
+} */
 
 
 .carousel-open:checked+.carousel-item {
@@ -647,7 +657,7 @@ Partnership & collaboration Css style */
     z-index: 10;
 }
 
-.wrapper{
+.wrapper {
     position: relative;
 }
 
@@ -680,7 +690,7 @@ Partnership & collaboration Css style */
 .formRow--input-wrapper.active .placeholder {
     top: -5px;
     background-color: #ffffff;
-    color:black;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     font-size: 11px;
@@ -694,7 +704,7 @@ Partnership & collaboration Css style */
 
 .formRow--input-wrapper .formRow--input:focus,
 .formRow--input-wrapper .formRow--input:hover {
-    border-color:#FABF2F;
+    border-color: #FABF2F;
 }
 
 .formRow .placeholder {
@@ -1016,7 +1026,7 @@ Partnership & collaboration Css style */
     word-wrap: break-word;
     border: 1px solid rgba(0, 0, 0, .05);
     border-radius: .375rem;
-    background-color:white;
+    background-color: white;
     background-clip: border-box;
 }
 
@@ -1034,7 +1044,7 @@ Partnership & collaboration Css style */
     margin-bottom: 0;
     padding: 1.25rem 1.5rem;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
-    background-color:white;
+    background-color: white;
 }
 
 .card-header:first-child {
@@ -1056,10 +1066,12 @@ Partnership & collaboration Css style */
     display: flex;
     align-items: flex-start;
 }
-.btn{
+
+.btn {
     background-color: #FABF2F;
-    color:black;
+    color: black;
 }
+
 .media-body {
     flex: 1 1;
 }
@@ -1385,7 +1397,7 @@ Partnership & collaboration Css style */
 }
 
 .focused .input-group-text {
-    color:black;
+    color: black;
     border-color: rgba(50, 151, 211, .25);
     background-color: #fff;
 }
@@ -1403,10 +1415,10 @@ Partnership & collaboration Css style */
     transition: all .15s ease;
 }
 
-.logos{
-     -webkit-animation:spin 10s linear infinite;
-     -moz-animation:spin 10s linear infinite;
-     animation:spin 10s linear infinite;
+.logos {
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
 }
 
 @-moz-keyframes spin {
