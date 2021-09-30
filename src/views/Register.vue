@@ -50,6 +50,7 @@
                   focus:border-transparent
                 "
                 placeholder="Name"
+                v-model="name"
               />
             </div>
           </div>
@@ -57,7 +58,7 @@
             <div class="relative">
               <input
                 type="text"
-                id="contact-form-email"
+                id="contact-last-name"
                 class="
                   rounded-lg
                   border-transparent
@@ -76,7 +77,8 @@
                   focus:ring-2 focus:ring-gray-300
                   focus:border-transparent
                 "
-                placeholder="Email"
+                placeholder="lastname"
+                v-model="lastname"
               />
             </div>
           </div>
@@ -117,6 +119,7 @@
           "
           type="email"
           placeholder="Email"
+          v-model="email"
         />
       </div>
 
@@ -156,6 +159,7 @@
           "
           type="password"
           placeholder="Password"
+          v-model="password"
         />
       </div>
       <p
@@ -175,13 +179,11 @@
             <span class="ml-1">I agree to Privacy Policy</span>
           </label>
 
-            <label class="flex items-center justify-start">
-          <input type="checkbox" class="form-checkbox" />
-          <span class="ml-1">I agree t terms and conditions</span>
-        </label>
+          <label class="flex items-center justify-start">
+            <input type="checkbox" class="form-checkbox" />
+            <span class="ml-1">I agree t terms and conditions</span>
+          </label>
         </div>
-
-      
 
         <div class="mt-8">
           <button

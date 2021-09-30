@@ -120,7 +120,7 @@
   <div class="xl:col-span-4 lg:col-span-3 sm:col-span-3 md:col-span-6">
     <div class="shadow-xl">
       <div class="flex flex-col items-center mt-6 -mx-2">
-        <div class="carousel-inner relative overflow-hidden w-full h-96">
+        <div class="carousel-inner  relative overflow-hidden w-full h-96">
           <input
             class="carousel-open"
             type="radio"
