@@ -26,7 +26,7 @@
 
       <div class="mt-8">
         <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
-          <div class="col-span-2 lg:col-span-1">
+          <div class="col-span-2 lg:col-span-4">
             <div class="relative">
               <input
                 type="text"
@@ -49,39 +49,12 @@
                   focus:ring-2 focus:ring-gray-300
                   focus:border-transparent
                 "
-                placeholder="Name"
-                v-model="name"
+                placeholder="Full name"
+                v-model="fullName"
               />
             </div>
           </div>
-          <div class="col-span-2 lg:col-span-1">
-            <div class="relative">
-              <input
-                type="text"
-                id="contact-last-name"
-                class="
-                  rounded-lg
-                  border-transparent
-                  flex-1
-                  appearance-none
-                  border border-gray-300
-                  w-full
-                  py-2
-                  px-4
-                  bg-white
-                  text-gray-700
-                  placeholder-gray-400
-                  shadow-sm
-                  text-base
-                  focus:outline-none
-                  focus:ring-2 focus:ring-gray-300
-                  focus:border-transparent
-                "
-                placeholder="lastname"
-                v-model="lastname"
-              />
-            </div>
-          </div>
+         
         </div>
       </div>
 
@@ -124,21 +97,6 @@
       </div>
 
       <div class="mt-4">
-        <!-- <div class="flex justify-between">
-          <label
-            class="
-              block
-              mb-2
-              text-sm
-              font-medium
-              text-gray-600
-              dark:text-gray-200
-            "
-            for="loggingPassword"
-            >Password</label
-          >
-        </div> -->
-
         <input
           id="loggingPassword"
           class="
@@ -161,6 +119,36 @@
           placeholder="Password"
           v-model="password"
         />
+      </div>
+      <div class="mt-4">
+         <div class="col-span-2 lg:col-span-4">
+            <div class="relative">
+              <input
+                type="text"
+                id="comfirmPassword"
+                class="
+                  rounded-lg
+                  border-transparent
+                  flex-1
+                  appearance-none
+                  border border-gray-300
+                  w-full
+                  py-2
+                  px-4
+                  bg-white
+                  text-gray-700
+                  placeholder-gray-400
+                  shadow-sm
+                  text-base
+                  focus:outline-none
+                  focus:ring-2 focus:ring-gray-300
+                  focus:border-transparent
+                "
+                placeholder="Comfirm Password"
+                
+              />
+            </div>
+          </div>
       </div>
       <p
         href="#"

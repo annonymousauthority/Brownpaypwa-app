@@ -149,7 +149,7 @@
             focus:outline-none
           "
           type="password"
-          v-model="pasword"
+          v-model="password"
         />
       </div>
       <router-link to="/forgotpassword">
