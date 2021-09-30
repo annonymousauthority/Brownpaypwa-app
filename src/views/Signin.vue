@@ -22,8 +22,7 @@
         Sign in to Brownpay
       </h2>
 
-    
-        <button
+      <button
         class="
           flex
           items-center
@@ -37,7 +36,6 @@
           hover:bg-gray-100
           px-4
           mx-auto
-         
         "
       >
         <div class="px-2 py-2">
@@ -61,11 +59,10 @@
           </svg>
         </div>
 
-        <span class=" py-3 text-md font-bold text-center"
+        <span class="py-3 text-md font-bold text-center"
           ><b>Sign in with Google</b></span
         >
       </button>
-     
 
       <!-- <div class="flex items-center justify-between mt-4">
         <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
@@ -92,7 +89,6 @@
             mt-4
           "
           for="LoggingEmailAddress"
-      
           >Email Address</label
         >
         <input
@@ -114,6 +110,7 @@
             focus:outline-none
           "
           type="email"
+          v-model="emailAddress"
         />
       </div>
 
@@ -152,6 +149,7 @@
             focus:outline-none
           "
           type="password"
+          v-model="pasword"
         />
       </div>
       <router-link to="/forgotpassword">
