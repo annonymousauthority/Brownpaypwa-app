@@ -3,7 +3,7 @@
     <div
       class="
         sidebar
-        lg:fixed
+       
         mx-auto
         w-80
         py-8

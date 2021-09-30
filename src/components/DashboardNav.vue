@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <nav class="bg-yellow-400 shadow w-full">
+    <nav class="bg-yellow-400 shadow w-full ">
       <div class="container px-6 py-4 mx-auto">
         <div class="md:flex md:items-center md:justify-between">
           <div class="flex items-center justify-between">
@@ -114,7 +114,7 @@
         >
           <div
             @click="isOpen = false"
-            class="absolute inset-0 bg-black opacity-50"
+            class="absolute inset-0 bg-black opacity-80"
             tabindex="0"
           ></div>
         </div>

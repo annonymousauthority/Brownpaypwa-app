@@ -92,6 +92,7 @@
             mt-4
           "
           for="LoggingEmailAddress"
+      
           >Email Address</label
         >
         <input
