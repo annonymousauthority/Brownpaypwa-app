@@ -1,8 +1,7 @@
 
 
 class Users {
-  
-    
+
     Constructor(userName, _name, emailAddress, dateCreated){
         this.userName = userName;
         this._name = _name;
