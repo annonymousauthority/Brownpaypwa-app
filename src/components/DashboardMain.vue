@@ -117,246 +117,36 @@
     </div>
   </div>
 
-  <div class="xl:col-span-4 lg:col-span-3 sm:col-span-3 md:col-span-6">
+  <div class="xl:col-span-4 lg:col-span-3 sm:col-span-3 md:col-span-6 w-full">
     <div class="shadow-xl">
-      <div class="flex flex-col items-center mt-6 -mx-2">
-        <div class="carousel-inner  relative overflow-hidden w-full h-96">
-          <input
-            class="carousel-open"
-            type="radio"
-            id="carousel-1"
-            name="carousel"
-            aria-hidden="true"
-            hidden=""
-            checked="checked"
-          />
-          <div class="carousel-item absolute opacity-0" style="height: 50vh">
-            <div
-              class="
-                block
-                h-full
-                w-full
-                bg-yellow-400
-                text-white text-5xl text-center
-              "
-            >
-              Slide 1
-            </div>
-          </div>
-          <label
-            for="carousel-3"
-            class="
-              prev
-              control-1
-              w-10
-              h-10
-              ml-2
-              md:ml-10
-              absolute
-              cursor-pointer
-              hidden
-              text-3xl
-              font-bold
-              text-black
-              hover:text-white
-              rounded-full
-              bg-white
-              hover:bg-blue-700
-              leading-tight
-              text-center
-              z-10
-              inset-y-0
-              left-0
-              my-auto
-            "
-            >‹</label
-          >
-          <label
-            for="carousel-2"
-            class="
-              next
-              control-1
-              w-10
-              h-10
-              mr-2
-              md:mr-10
-              absolute
-              cursor-pointer
-              hidden
-              text-3xl
-              font-bold
-              text-black
-              hover:text-white
-              rounded-full
-              bg-white
-              hover:bg-blue-700
-              leading-tight
-              text-center
-              z-10
-              inset-y-0
-              right-0
-              my-auto
-            "
-            >›</label
-          >
-
-          <!--Slide 2-->
-          <input
-            class="carousel-open"
-            type="radio"
-            id="carousel-2"
-            name="carousel"
-            aria-hidden="true"
-            hidden=""
-          />
-          <div class="carousel-item absolute opacity-0" style="height: 50vh">
-            <div
-              class="
-                block
-                h-full
-                w-full
-                bg-yellow-400
-                text-white text-5xl text-center
-              "
-            >
-              Slide 2
-            </div>
-          </div>
-          <label
-            for="carousel-1"
-            class="
-              prev
-              control-2
-              w-10
-              h-10
-              ml-2
-              md:ml-10
-              absolute
-              cursor-pointer
-              hidden
-              text-3xl
-              font-bold
-              text-black
-              hover:text-white
-              rounded-full
-              bg-white
-              hover:bg-blue-700
-              leading-tight
-              text-center
-              z-10
-              inset-y-0
-              left-0
-              my-auto
-            "
-            >‹</label
-          >
-          <label
-            for="carousel-3"
-            class="
-              next
-              control-2
-              w-10
-              h-10
-              mr-2
-              md:mr-10
-              absolute
-              cursor-pointer
-              hidden
-              text-3xl
-              font-bold
-              text-black
-              hover:text-white
-              rounded-full
-              bg-white
-              hover:bg-blue-700
-              leading-tight
-              text-center
-              z-10
-              inset-y-0
-              right-0
-              my-auto
-            "
-            >›</label
-          >
-
-          <!--Slide 3-->
-          <input
-            class="carousel-open"
-            type="radio"
-            id="carousel-3"
-            name="carousel"
-            aria-hidden="true"
-            hidden=""
-          />
-          <div class="carousel-item absolute opacity-0" style="height: 50vh">
-            <div
-              class="
-                block
-                h-full
-                w-full
-                bg-yellow-400
-                text-white text-5xl text-center
-              "
-            ></div>
-          </div>
-          <label
-            for="carousel-2"
-            class="
-              prev
-              control-3
-              w-10
-              h-10
-              ml-2
-              md:ml-10
-              absolute
-              cursor-pointer
-              hidden
-              text-3xl
-              font-bold
-              text-black
-              hover:text-white
-              rounded-full
-              bg-white
-              hover:bg-blue-700
-              leading-tight
-              text-center
-              z-10
-              inset-y-0
-              left-0
-              my-auto
-            "
-            >‹</label
-          >
-          <label
-            for="carousel-1"
-            class="
-              next
-              control-3
-              w-10
-              h-10
-              mr-2
-              md:mr-10
-              absolute
-              cursor-pointer
-              hidden
-              text-3xl
-              font-bold
-              text-black
-              hover:text-white
-              rounded-full
-              bg-white
-              hover:bg-blue-700
-              leading-tight
-              text-center
-              z-10
-              inset-y-0
-              right-0
-              my-auto
-            "
-            >›</label
-          >
-
-          <!-- Add additional indicators for each slide-->
+      <div class="flex flex-col items-center mt-6 h-96">
+        <div id="slider">
+          <ul id="slideWrap">
+            <li>
+              <img
+                :src="img1"
+                alt=""
+                class="object-fill"
+              />
+            </li>
+            <li>
+              <img
+                :src="img2"
+                alt=""
+                  class="object-cover"
+              />
+            </li>
+            <li>
+              <img
+                :src="img3"
+                alt=""
+                  class="object-cover"
+              />
+            </li>
+           
+          </ul>
+          <a id="prev" href="#">&#8810;</a>
+          <a id="next" href="#">&#8811;</a>
         </div>
       </div>
     </div>
@@ -534,7 +324,7 @@
             xl:w-1/3
             md:px-4
             md:w-1/3
-              md:my-4
+            md:my-4
           "
         >
           <span class="text-gray-600">{{ info.text }}</span>
@@ -552,7 +342,7 @@
             xl:w-1/3
             md:px-4
             md:w-1/3
-              md:my-4
+            md:my-4
           "
         >
           <span class="text-gray-600">{{ info.name }}</span>
@@ -629,6 +419,9 @@ export default {
   name: "DashMain",
   data() {
     return {
+      img1: require("../assets/Carousel 1.png"),
+      img2: require("../assets/Carousel 2.png"),
+      img3: require("../assets/Carousel 3.png"),
       prices: [
         {
           btc: "0.000387",
@@ -662,6 +455,64 @@ export default {
     user() {
       return this.$store.state.users;
     }
+  },
+
+  mounted() {
+    var responsiveSlider = function() {
+
+var slider = document.getElementById("slider");
+var sliderWidth = slider.offsetWidth;
+var slideList = document.getElementById("slideWrap");
+var count = 1;
+var items = slideList.querySelectorAll("li").length;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+
+window.addEventListener('resize', function() {
+  sliderWidth = slider.offsetWidth;
+});
+
+var prevSlide = function() {
+  if(count > 1) {
+    count = count - 2;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count == 1) {
+    count = items - 1;
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+};
+
+var nextSlide = function() {
+  if(count < items) {
+    slideList.style.left = "-" + count * sliderWidth + "px";
+    count++;
+  }
+  else if(count == items) {
+    slideList.style.left = "0px";
+    count = 1;
+  }
+};
+
+next.addEventListener("click", function() {
+  nextSlide();
+});
+
+prev.addEventListener("click", function() {
+  prevSlide();
+});
+
+setInterval(function() {
+  nextSlide()
+}, 5000);
+
+};
+
+window.onload = function() {
+responsiveSlider();  
+}
   }
 };
 </script>
